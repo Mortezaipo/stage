@@ -9,7 +9,7 @@
                     var project_list = $("#projects tbody");
                     jQuery.each(projects, function(i, v) {
                         project_list.append(
-                            $("<tr>").append($("<td>").append(v))
+                            $("<tr>").append($("<td>").append(v.name))
                         );
                     });
                 });
