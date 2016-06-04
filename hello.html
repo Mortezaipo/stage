@@ -12,7 +12,7 @@
                                 .append($("<td>").append(v.name))
                                 .append($("<td>").append(v.description))
                                 .append($("<td>").append(v.updated_at))
-                                .append($("<td>").append($("<a>").attr('href',v.html_url)))
+                                .append($("<td>").append($("<a>").attr('href',v.html_url).text("Source")))
                             );
                     });
                 });
