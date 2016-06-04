@@ -5,22 +5,26 @@
         <script>
             $(document).ready(function(){
                 $.get("https://api.github.com/users/mortezaipo/repos", function(data) {
-                    //projects = JSON.parse(data);
-                    var project_list = $("#projects tbody");
-                    jQuery.each(projects, function(i, v) {
-                        project_list.append(
-                            $("<tr>").append($("<td>").append(v.name))
-                        );
+                    jQuery.each(data, function(i, v){
+                        console.log(v.name);
+                        $("#projects").find("tbody")
+                            .append($("<tr>")
+                                .append($("<td>").append(v.name))
+                                .append($("<td>").append(v.description))
+                                .append($("<td>").append(v.updated_at))
+                                .append($("<td>").append(v.html_url))
+                            );
                     });
                 });
             });
         </script>
     </head>
     <body>
-        <table id="projects">
+        <table id="projects" border="1">
             <thead>
                 <th>Row</th>
                 <th>Name</th>
+                <th>Description</th>
                 <th>Links</th>
             </thead>
             <tbody>
