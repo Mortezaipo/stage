@@ -1,1 +1,16 @@
-hi dude!
+<!doctype html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $.get("https://api.github.com/users/mortezaipo/repos", function(data) {
+                    console.log(data);
+                });
+            });
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
