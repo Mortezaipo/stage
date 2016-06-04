@@ -5,7 +5,8 @@
         <script>
             $(document).ready(function(){
                 $.get("https://api.github.com/users/mortezaipo/repos", function(data) {
-                    console.log(data);
+                    projects = JSON.parse(data);
+                    console.log(projects);
                 });
             });
         </script>
