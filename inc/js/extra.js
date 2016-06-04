@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $.get("https://api.github.com/users/mortezaipo/repos", function(data) {
         $("#projects_list #load").remove();
+        console.log(data);
         jQuery.each(data, function(i, v){
             $("#projects_list tbody")
                 .append($("<tr>")
