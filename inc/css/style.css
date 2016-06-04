@@ -1,0 +1,83 @@
+body
+{
+    background-color: #F2F6FA !important; /*#F3EED7*/
+}
+
+.header-text
+{
+    color: #00BCD4;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.navbar-default
+{
+    background-color: #FFF !important;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.form-control
+{
+    box-shadow: none !important;
+    border-color:#DDD !important;
+}
+
+.form-control:active,
+.form-control:focus
+{
+    box-shadow: none !important;
+    border-color: #CCC !important;
+}
+
+.footer
+{
+    color: #AAA;
+}
+
+.btn-active
+{
+    color: #000;
+    background-color: #D4D4D4;
+    border-color: #CCCCCC;
+}
+
+.last-update
+{
+    color: #B5B5B5;
+    font-weight: normal !important;
+    margin-top: 3%;
+}
+
+.panel-default
+{
+    border-color: #e7e7e7 !important;
+}
+
+.progress
+{
+    margin-bottom: 0 !important;
+}
+
+.table thead
+{
+    background-color: #F1EEE2;
+    border-bottom: 1px !important;
+}
+
+.table>thead>tr>th
+{
+    border-bottom:0 !important;
+}
+
+.progress
+{
+    background-color: #F1EEE2 !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.progress-bar
+{
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
