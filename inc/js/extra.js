@@ -2,6 +2,7 @@ $(document).ready(function(){
     $.get('https://api.github.com/users/mortezaipo/repos', function(data) {
         $('#projects_list #load').remove();
         jQuery.each(data, function(i, v){
+            console.log(v);
             if(v.name != 'Stage')
             {
                 code_fork = '';

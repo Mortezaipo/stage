@@ -53,20 +53,36 @@ body
     border-color: #e7e7e7 !important;
 }
 
+/*.panel-body
+{
+    padding: 0 !important;
+}*/
+
 .progress
 {
     margin-bottom: 0 !important;
 }
 
-.table thead
+.table>thead
 {
-    background-color: #F1EEE2;
+    background-color: #34969C;/*#F1EEE2*/;
+    color: #FFF;
     border-bottom: 1px !important;
 }
 
 .table>thead>tr>th
 {
     border-bottom:0 !important;
+}
+
+.table>thead>tr>th:first-child
+{
+    border-radius: 3px 0 0 0;
+}
+
+.table>thead>tr>th:last-child
+{
+    border-radius: 0 3px 0 0;
 }
 
 .progress
@@ -85,4 +101,9 @@ body
 .text-center
 {
     text-align: center;
+}
+
+.table
+{
+    margin-bottom: 0 !important;
 }
