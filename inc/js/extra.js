@@ -7,7 +7,7 @@ $(document).ready(function(){
                     .append($("<td>").append(i+1))
                     .append($("<td>").append(v.name))
                     .append($("<td>").append(v.description))
-                    .append($("<td>").append(v.updated_at))
+                    .append($("<td>").append(v.updated_at.substring(0, 10)))
                     .append($("<td>").append(
                         $("<a>").attr({href: v.html_url, class: 'btn btn-xs btn-default'}).html("Source"))
                     )
