@@ -7,7 +7,7 @@
                 $.get("https://api.github.com/users/mortezaipo/repos", function(data) {
                     $("#projects #load").remove();
                     jQuery.each(data, function(i, v){
-                        $("#projects").find("tbody")
+                        $("#projects tbody")
                             .append($("<tr>")
                                 .append($("<td>").append(v.name))
                                 .append($("<td>").append(v.description))
