@@ -1,7 +1,6 @@
 $(document).ready(function(){
     $.get("https://api.github.com/users/mortezaipo/repos", function(data) {
         $("#projects_list #load").remove();
-        console.log(data);
         jQuery.each(data, function(i, v){
             $("#projects_list tbody")
                 .append($("<tr>")
@@ -10,7 +9,7 @@ $(document).ready(function(){
                     .append($("<td>").append(v.description))
                     .append($("<td>").append(v.updated_at.substring(0, 10)))
                     .append($("<td>").append(
-                        $("<a>").attr({href: v.html_url, class: 'btn btn-xs btn-default'}).html("Source"))
+                        $("<a>").attr({href: v.html_url, class: 'btn btn-xs btn-info'}).html("Source"))
                     )
                 );
         });
