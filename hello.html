@@ -6,12 +6,25 @@
             $(document).ready(function(){
                 $.get("https://api.github.com/users/mortezaipo/repos", function(data) {
                     projects = JSON.parse(data);
-                    console.log(projects);
+                    var project_list = $("#projects tbody");
+                    jQuery.each(projects, function(i, v) {
+                        project_list.append(
+                            $("<tr>").append($("<td>").append(v))
+                        );
+                    });
                 });
             });
         </script>
     </head>
     <body>
-
+        <table id="projects">
+            <thead>
+                <th>Row</th>
+                <th>Name</th>
+                <th>Links</th>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </body>
 </html>
