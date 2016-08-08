@@ -2,15 +2,17 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Morteza Nourelahi Alamdari</title>
+    <title>Morteza Nourelahi Alamdari | Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,500,700,900|Pacifico" rel="stylesheet">
     <style>
       .title{ font-family: 'Pacifico', cursive; }
       h3, h4, legend, p{ font-family: 'Arima Madurai', cursive; }
       p{ font-size:19px; }
       legend{ font-weight: bold;}
+      .active-link{ text-decoration: underline; }
     </style>
   </head>
   <body>
@@ -19,7 +21,7 @@
       <h3 class="title">Morteza Nourelahi Alamdari</h3>
       <nav class="navbar navbar-default">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li class="active-link"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Resume</a></li>
           <li><a href="/contact">Contact</a></li>
@@ -32,25 +34,25 @@
           <legend>Brief Introduction:</legend>
           <p>
             My name is Morteza. I'm a GNU/Linux software developer. I'd like to implement ideas and solve problems specially in low-level concepts.
-            I write software usually in C and Go.
+            I write software in C, Go and Python.
             <br><br>
           </p>
         </fieldset>
 
         <fieldset>
           <legend>Current Projects:</legend>
-          <div class="well" style="box-shadow: none !important;">
+          <div class="well">
             <h4><span class="glyphicon glyphicon-star"></span> ugtrain-gui</h4>
             <p>Graphical user interface software for ugtrain project. [C]</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuein="0" aria-valuemax="100" style="width: 20%;">20%</div>
+              <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="20" aria-valuein="0" aria-valuemax="100" style="width: 20%;">20%</div>
             </div>
           </div>
-          <div class="well" style="box-shadow: none !important;">
+          <div class="well">
             <h4><span class="glyphicon glyphicon-star"></span> fawnbee</h4>
             <p>Prepare Services based on mail. [Go]</p>
             <div class="progress">
-              <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="5" aria-valuein="0" aria-valuemax="100" style="width: 5%;">5%</div>
+              <div class="progress-bar progress-bar-info progress-bar-striped active" role="progressbar" aria-valuenow="5" aria-valuein="0" aria-valuemax="100" style="width: 5%;">5%</div>
             </div>
           </div>
         </fieldset>
