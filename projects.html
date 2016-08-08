@@ -1,91 +1,101 @@
-<!--
-    Project name: Stage [Morteza Nourelahi Alamdari Website]
-    Author: Morteza Nourelahi Alamdari
-    License: GNU GPLv3
--->
-<!doctype html>
-<html>
-    <head>
-        <title>MortezaIpo | Projects</title>
-        <link rel="stylesheet" href="inc/css/bootstrap.min.css">
-        <link rel="stylesheet" href="inc/css/font-awesome.min.css">
-        <link rel="stylesheet" href="inc/css/style.css">
-        <link href='https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700' rel='stylesheet' type='text/css'>
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <script src="inc/js/extra.js"></script>
-    </head>
-    <body>
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h2 class="header-text">
-                        <i class="fa fa-terminal"></i> Morteza Ipo
-                        <small></small>
-                    </h2>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Morteza Nourelahi Alamdari | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,500,700,900|Pacifico" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://use.fontawesome.com/531b387394.js"></script>
+    <style>
+      .title{ font-family: 'Pacifico', cursive; }
+      h3, h4, legend, p{ font-family: 'Arima Madurai', cursive; }
+      p{ font-size:19px; }
+      legend{ font-weight: bold;}
+      .active-link{ text-decoration: underline; }
+    </style>
+    <script>
+      $(document).ready(function(){
+      $.get('https://api.github.com/users/mortezaipo/repos', function(data) {
+        $('#projects_list #load').remove();
+        jQuery.each(data, function(i, v){
+          if(v.name != 'stage')
+          {
+            code_fork = '';
+            if(v.fork == true) code_fork = ' <i class="fa fa-code-fork"></i>'
+            $('#projects_list tbody')
+              .append($("<tr>")
+                  .append($('<td class="text-center">').append(i+1))
+                  .append($('<td>').append(v.name + code_fork))
+                  .append($('<td>').append(v.description))
+                  .append($('<td>').append(v.updated_at.substring(0, 10)))
+                  .append($('<td>').append(
+                      $('<a>').attr({href:v.html_url, class:'btn btn-xs btn-info btn-block', target:'_blank'}).html('<i class="fa fa-github"></i> Source'))
+                  )
+              );
+          }
+          });
+        });
+      });
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+      <h3 class="title">Morteza Nourelahi Alamdari</h3>
+      <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+          <li class="active-link"><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+          <li class="active-link"><a href="/projects">Projects</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <div>
+      
+        <fieldset>
+          <legend>Open Source Projects:</legend>
+          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  <table class="table table-hover" id="projects_list">
+                    <thead>
+                      <th class="col-md-1 text-center">Row</th>
+                      <th class="col-md-2">Name</th>
+                      <th>Brief Description</th>
+                      <th class="col-md-1">Updated</th>                                    
+                      <th class="col-md-1">Links</th>
+                    </thead>
+                    <tbody>
+                      <tr id="load">
+                          <td colspan="5">Please wait... <i class="fa fa-spinner fa-pulse fa-fw"></i></td>    
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <div class="col-md-6">
-                        
-                </div>
-            </div>
-            <div>
-                <div class="navbar navbar-default">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                    <!--
-                    <form class="navbar-form pull-right">
-                        <div class="form-group">
-                            <input type="text" placeholder="Search" class="form-control">
-                        </div>
-                    </form>
-                    -->
-                </div>
-            </div>
-            
-            <div class="row body">
-                <div class="col-md-12">
-                    <div class="panel panel-default">
-                        <div class="panel-body" style="padding: 0 !important;">
-                            <table class="table table-hover" id="projects_list">
-                                <thead>
-                                    <th class="col-md-1 text-center">Row</th>
-                                    <th class="col-md-2">Name</th>
-                                    <th>Brief Description</th>
-                                    <!--
-                                    <th class="col-md-1">License</th>
-                                    <th class="col-md-2">Status</th>
-                                    -->
-                                    <th class="col-md-1">Updated</th>                                    
-                                    <th class="col-md-1">Links</th>
-                                </thead>
-                                <tbody>
-                                    <tr id="load">
-                                        <td colspan="5">Please wait... <i class="fa fa-spinner fa-pulse fa-fw"></i></td>    
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="panel-footer">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    <a href="https://github.com/Mortezaipo/" target="_blank" class="btn btn-default">Open Up My Github Page</a>
-                                </div>
-                                <div class="col-md-3">
-                                    <label class="last-update"></label>  
-                                </div>
-                            </div>
-                        </div>
+                <div class="panel-footer">
+                  <div class="row">
+                    <div class="col-md-9">
+                      <a href="https://github.com/Mortezaipo/" target="_blank" class="btn btn-success"><i class="fa fa-github"></i> Open Up My Github Page</a>
                     </div>
+                    <div class="col-md-3">
+                      <label class="last-update"></label>  
+                    </div>
+                  </div>
                 </div>
-                <div class="col-md-12 footer">
-                    All rights reserved by Morteza Nourelahi Alamdari (Morteza Ipo) &copy;    
-                </div>
+              </div>
             </div>
-        </div>
-        
-    </body>
+          </div>
+        </fieldset>
+      
+      </div>
+      <hr>
+      All rights reserved &copy;
+    </div>  
+  </body>
 </html>
