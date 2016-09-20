@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai:400,500,700,900|Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet">
+    <link href="extra.css" rel="stylesheet">
     <script src="https://use.fontawesome.com/531b387394.js"></script>
-    <style>
-      .title{ font-family: 'Pacifico', cursive; }
-      h3, h4, p, .activity-header,.activity-body{ font-family: 'Arima Madurai', cursive; }
-      .right-border { border-right: 1px solid #E5E5E5; }
-      p{ font-size:19px; }
-      .activity-header{ color:#ED683F; }
-      .center div{ text-align: center; }
-      .contact-link{ color:#333; }
-      .contact-link:hover{ color:#ED683F; }
-    </style>
   </head>
   <body>
     
     <div class="container">
-      
-      <h1 class="title">Morteza Nourelahi Alamdari</h1>
+      <div class="row">
+        <div class="col-md-7">
+          <h1 class="title">Morteza Nourelahi Alamdari</h1>
+        </div>
+        <div class="col-md-5 menu-bar">
+          <ul class="nav nav-pills">
+            <li role="presentation" class="active"><a href="index.html">Home</a></li>
+            <li role="presentation"><a href="projects.html">Projects</a></li>
+            <li role="presentation"><a href="cv.html">Resume</a></li>
+            <li role="presentation"><a href="links.html">Links</a></li>
+            <li role="presentation"><a href="contact.html">About</a></li>
+            <li role="presentation"><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
       <div>
         <h3>Brief Introduction:</h3>
         <p>
-          My name is Morteza, a Python developer. I'd like to implement ideas and solve problems.
+          My name is Morteza, I'm Python/Erlang developer & open source enthusiast.
+          I'd like to implement ideas and solve problems.
         </p>
       </div>
       
@@ -44,12 +49,26 @@
             <div class="col-md-10">
               <p class="activity-body">
                 Designing and implementing services and panels.<br>
-                Developing commercial and enterprise products for companies.
+                Developing commercial and enterprise products.
               </p>
             </div>
           </div>
         </div>
         
+        <div class="well">
+          <div class="row">
+            <div class="col-md-2 right-border">
+              <h2 class="activity-header">Erlang</h2>
+            </div>
+            <div class="col-md-10">
+              <p class="activity-body">
+                Designing and implementing high scale services.<br>
+                Developing commercial and enterprise products.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <div class="well">
           <div class="row">
             <div class="col-md-2 right-border">
@@ -63,17 +82,24 @@
             </div>
           </div>
         </div>
-      
-      <hr>
-      <div>
-        <h3>Contacts:</h3>
-        <div>
-          <p>
-          Feel free to contact me:<br>
-          - Mobile: +98 921 130 7441<br>
-          - Email: mortezaipo@gmail.com<br>
-          </p>
+
+        <div class="well">
+          <div class="row">
+            <div class="col-md-2 right-border">
+              <h2 class="activity-header">Analysis</h2>
+            </div>
+            <div class="col-md-10">
+              <p class="activity-body">
+                Designing and Impelemnting functioanlity for data analysis based on data.<br>
+                Apache Spark, Hadoop, Storm, Python & Erlang will be integreted based on requirements.
+              </p>
+            </div>
+          </div>
         </div>
+
+      <hr>
+
+      <div>
         <div class="row center">
           <div class="col-md-3">
             <a href="https://ir.linkedin.com/in/mortezaipo" class="contact-link" target="_blank">
@@ -103,7 +129,7 @@
       </div>
       
       <hr>
-      All rights reserved 2016&copy;
+      All rights reserved &copy;
     </div>
     
   </body>
