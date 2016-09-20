@@ -8,3 +8,4 @@ p{ font-size:19px; }
 .contact-link:hover{ color:#ED683F; }
 .menu-bar{ padding-top: 25px; }
 .table td{ border:none !important; }
+.capitalize { text-transform: capitalize; }
