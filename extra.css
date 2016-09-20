@@ -1,0 +1,9 @@
+.title{ font-family: 'Pacifico', cursive; }
+h3, h4, p, .activity-header,.activity-body{ font-family: 'Arima Madurai', cursive; }
+.right-border { border-right: 1px solid #E5E5E5; }
+p{ font-size:19px; }
+.activity-header{ color:#ED683F; }
+.center div{ text-align: center; }
+.contact-link{ color:#333; }
+.contact-link:hover{ color:#ED683F; }
+.menu-bar{ padding-top: 25px; }
