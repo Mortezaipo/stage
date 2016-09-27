@@ -1,11 +1,14 @@
-.title{ font-family: 'Pacifico', cursive; }
-h3, h4, p, .activity-header,.activity-body{ font-family: 'Arima Madurai', cursive; }
+.title{ font-family: 'Rochester', cursive; }
 .right-border { border-right: 1px solid #E5E5E5; }
-p{ font-size:19px; }
-.activity-header{ color:#ED683F; }
+.activity-header{ color:#ED683F; font-family: 'Baloo Bhaina', cursive; font-size: 25px; }
 .center div{ text-align: center; }
 .contact-link{ color:#333; }
 .contact-link:hover{ color:#ED683F; }
 .menu-bar{ padding-top: 25px; }
 .table td{ border:none !important; }
 .capitalize { text-transform: capitalize; }
+.footer { font-family: 'Sacramento', cursive; font-size: 27px;}
+hr { border-top: 1px solid #e5e5e5 !important;}
+.btn-xing { color: #ffffff; background-color: #B0D400; border-color: transparent; }
+.btn-linkedin { color: #ffffff; background-color: #1F88BE; border-color: transparent; }
+.profile-img { width:100%; }
