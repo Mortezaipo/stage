@@ -13,7 +13,7 @@ jQuery.each(data, function(i, v){
         $('#projects_list tbody')
             .append($("<tr>")
                 .append($('<td class="text-center">').append(i+1))
-                .append($('<td class="capitalize">').append(v.name + code_fork))
+                .append($('<td class="capitalize">').append(v.name.replace('-',' ').replace('_',' ') + code_fork))
                 .append($('<td>').append(v.description))
                 .append($('<td>').append(v.updated_at.substring(0, 10)))
                 .append($('<td>').append(
