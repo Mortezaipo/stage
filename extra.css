@@ -13,4 +13,4 @@ hr { border-top: 1px solid #e5e5e5 !important;}
 .btn-linkedin { color: #ffffff; background-color: #1F88BE; border-color: transparent; }
 .profile-img { width:100%; }
 .center { text-align:center; }
-.well { background-color: #F9FAFA !important; border: #D7DCDD !important; }
+.well { background-color: #F9FAFA !important; border: 1px solid #D7DCDD !important; }
