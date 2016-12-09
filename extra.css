@@ -7,10 +7,12 @@
 .menu-bar{ padding-top: 25px; }
 .table td{ border:none !important; }
 .capitalize { text-transform: capitalize; }
-.footer { font-family: 'Sacramento', cursive; font-size: 27px;}
+.footer { font-family: 'Sacramento', cursive; font-size: 27px; }
 hr { border-top: 1px solid #e5e5e5 !important;}
 .btn-xing { color: #ffffff; background-color: #B0D400; border-color: transparent; }
 .btn-linkedin { color: #ffffff; background-color: #1F88BE; border-color: transparent; }
 .profile-img { width:100%; }
 .center { text-align:center; }
 .well { background-color: #F9FAFA !important; border: 1px solid #D7DCDD !important; }
+.nav-pills li.active>a, .nav-pills li>a:hover { border-color: #D7DCDD !important; }
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus { color: #525E61 !important; background-color: #F9FAFA !important; }
