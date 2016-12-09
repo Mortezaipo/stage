@@ -1,4 +1,4 @@
-.title{ font-family: 'Rochester', cursive; color: #525E61; }
+.title{ font-family: 'Rochester', cursive; color: #525E61 !important; }
 .right-border { border-right: 1px solid #E5E5E5; }
 .activity-header{ color: #2CCC9B; font-family: 'Baloo Bhaina', cursive; font-size: 25px; }
 .center div{ text-align: center; }
@@ -13,4 +13,4 @@ hr { border-top: 1px solid #e5e5e5 !important;}
 .btn-linkedin { color: #ffffff; background-color: #1F88BE; border-color: transparent; }
 .profile-img { width:100%; }
 .center { text-align:center; }
-.well { background-color: #F9FAFA; border: #D7DCDD; }
+.well { background-color: #F9FAFA !important; border: #D7DCDD !important; }
