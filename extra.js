@@ -17,7 +17,7 @@ jQuery.each(data, function(i, v){
                 .append($('<td>').append(v.description))
                 .append($('<td>').append(v.updated_at.substring(0, 10)))
                 .append($('<td>').append(
-                    $('<a>').attr({href:v.html_url, class:'btn btn-xs btn-info btn-block', target:'_blank'}).html('<i class="fa fa-github"></i> Source'))
+                    $('<a>').attr({href:v.html_url, class:'btn btn-xs btn-success btn-block', target:'_blank'}).html('<i class="fa fa-github"></i> Source'))
                 )
             );
         }
