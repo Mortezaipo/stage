@@ -8,7 +8,7 @@ body, a, .contact-link{ color: #525E61 !important; }
 .table { margin-bottom: 0 !important; }
 .table>thead>tr>th { border-bottom: 1px solid #ddd !important; }
 .capitalize { text-transform: capitalize; }
-footer { font-family: 'Sacramento', cursive; font-size: 23px; padding: 15px 10px; }
+footer { padding: 15px 10px; }
 hr { border-top: 1px solid #D7DCDD !important; margin:0 !important; }
 .btn-xing { color: #FFF !important; background-color: #B0D400; border-color: transparent; }
 .btn-linkedin { color: #FFF !important; background-color: #1F88BE; border-color: transparent; }
