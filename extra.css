@@ -1,7 +1,7 @@
 body, a, .contact-link{ color: #525E61 !important; }
 .title{ font-family: 'Rochester', cursive; color: #525E61 !important; }
 .right-border { border-right: 1px solid #E5E5E5; }
-.activity-header{ color: #2CCC9B; font-family: 'Baloo Bhaina', cursive; font-size: 25px; }
+.activity-header{ color: #2CCC9B; font-family: 'Baloo Bhaina', cursive; font-size: 25px; padding-top:25px !important; }
 .center div{ text-align: center; }
 .menu-bar{ padding-top: 25px; }
 .table td{ border:none !important; }
