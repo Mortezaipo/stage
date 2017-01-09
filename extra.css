@@ -1,0 +1,25 @@
+body, a, .contact-link{ color: #525E61 !important; }
+.title{ font-family: 'Rochester', cursive; color: #525E61 !important; }
+.right-border { border-right: 1px solid #E5E5E5; }
+.activity-header{ color: #2CCC9B; font-family: 'Baloo Bhaina', cursive; font-size: 25px; padding-top:25px !important; }
+.center div{ text-align: center; }
+.menu-bar{ padding-top: 25px; }
+.table td{ border:none !important; }
+.table { margin-bottom: 0 !important; }
+.table>thead>tr>th { border-bottom: 1px solid #ddd !important; }
+.capitalize { text-transform: capitalize; }
+footer { padding: 22px 10px; }
+hr { border-top: 1px solid #D7DCDD !important; margin:0 !important; }
+.btn-xing { color: #FFF !important; background-color: #B0D400; border-color: transparent; }
+.btn-linkedin { color: #FFF !important; background-color: #1F88BE; border-color: transparent; }
+.profile-img { width:100%; }
+.center { text-align: center; }
+.left { text-align: left; }
+.right { text-align: right; }
+.well { background-color: #F9FAFA !important; border: 1px solid #D7DCDD !important; box-shadow: 0 3px 9px #E5E5E5; padding:0 !important; }
+.navbar-default{ background-color: #F9FAFA !important; border: 1px solid #D7DCDD !important; box-shadow: 0 3px 9px #E5E5E5; }
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { background-color: #EFEFEF !important; }
+.padding-s1 { padding:20px; }
+.right-border{ border-right:1px solid #D7DCDD; }
+.btn-success { background-color: #2CCC9B !important; color: #FFF !important; border: none !important; }
+.badge { background-color: #2CCC9B !important; }
