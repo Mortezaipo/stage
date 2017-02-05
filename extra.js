@@ -25,11 +25,11 @@ function submit_contact_form() {
     $("#alert").remove();
     $.post("https://script.google.com/macros/s/AKfycbz43wLSyHEMmqnw_WU6XNRNyFc7_L8_MrehvDa56DMm7PvZu9w/exec", $("#cform").serialize(), function(c) {
         if(c.code == 0) {
-            $("#contact_div").before('<div id="alert" class="alert alert-success"><b>Thanks!</b> Your message has been sent.</div>');
+            $("#cform").before('<div id="alert" class="alert alert-success"><b>Thanks!</b> Your message has been sent.</div>');
             $("#contact_div").find("input").val('');
             $("#contact_div").find("textarea").val('');
         } else {
-            $("#contact_div").before('<div id="alert" class="alert alert-danger"><b>Error!</b> Invalid form data. Please check your data.</div>');
+            $("#cform").before('<div id="alert" class="alert alert-danger"><b>Error!</b> Invalid form data. Please check your data.</div>');
         }
         $("#sendform").removeAttr('disabled');
         $("#sendform").html('<i class="fa fa-envelope"></i> Send');
