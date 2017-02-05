@@ -18,8 +18,9 @@
     <script>
     $("document").ready(function() {
         $("#sendform").click(function(){
-            console.log("HEEEEE");
+            $(this).attr('disabled','disabled');
             submit_contact_form();
+            $(this).removeAttr('disabled');
         });
     });
     </script>
