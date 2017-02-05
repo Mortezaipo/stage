@@ -16,8 +16,11 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script src="extra.js"></script>
     <script>
-    $("#sendform").click(function(){
-        submit_contact_form();
+    $("document").ready(function() {
+        $("#sendform").click(function(){
+            console.log("HEEEEE");
+            submit_contact_form();
+        });
     });
     </script>
   </head>
