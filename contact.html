@@ -19,8 +19,8 @@
     $("document").ready(function() {
         $("#sendform").click(function(){
             $(this).attr('disabled','disabled');
+            $(this).text("Please wait...");
             submit_contact_form();
-            $(this).removeAttr('disabled');
         });
     });
     </script>
