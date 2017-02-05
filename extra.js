@@ -35,3 +35,11 @@ function submit_contact_form() {
         $("#sendform").html('<i class="fa fa-envelope"></i> Send');
     });
 }
+
+$("document").ready(function() {
+    $("#sendform").click(function(){
+        $(this).attr('disabled','disabled');
+        $(this).text("Please wait...");
+        submit_contact_form();
+    });
+});
