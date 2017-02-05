@@ -27,3 +27,4 @@ hr { border-top: 1px solid #D7DCDD !important; margin:0 !important; }
 .form-control{ box-shadow: none !important; }
 .form-control:focus{ border: 1px solid #2CCC9B !important; border-left: 3px solid #2CCC9B !important; }
 #id_message{ min-height: 100px; }
+.well-p { padding: 10px !important; }
