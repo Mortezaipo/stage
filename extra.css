@@ -6,7 +6,7 @@ body, a, .contact-link{ color: #525E61 !important; }
 .menu-bar{ padding-top: 25px; }
 .table td{ border:none !important; }
 .table { margin-bottom: 0 !important; }
-.table>thead>tr>th { border-bottom: 1px solid #ddd !important; }
+.table>thead>tr>th { border-bottom: 1px solid #DDD !important; }
 .capitalize { text-transform: capitalize; }
 footer { padding: 22px 10px; }
 hr { border-top: 1px solid #D7DCDD !important; margin:0 !important; }
@@ -24,3 +24,6 @@ hr { border-top: 1px solid #D7DCDD !important; margin:0 !important; }
 .right-border{ border-right:1px solid #D7DCDD; }
 .btn-success { background-color: #2CCC9B !important; color: #FFF !important; border: none !important; }
 .badge { background-color: #2CCC9B !important; }
+.form-control{ box-shadow: none !important; }
+.form-control:focus{ border: 1px solid #2CCC9B !important; border-left: 3px solid #2CCC9B !important; }
+#id_message{ min-height: 100px; }
