@@ -3,7 +3,6 @@
   <head>
     <title><$BlogPageTitle$></title>
     <$BlogMetaData$>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Rochester|Sacramento" rel="stylesheet">
     <script src="https://use.fontawesome.com/531b387394.js"></script>
@@ -48,10 +47,10 @@
         <div class="post">
           <a name="<$BlogItemNumber$>"></a>
           <BlogItemTitle>
-	          <BlogItemUrl><a href="<$BlogItemUrl$>" title="external link" class="title-link"></BlogItemUrl>
-            <h3 class="post-title"><$BlogItemTitle$></h3>
-            <small><BlogDateHeader><$BlogDateHeaderDate$></BlogDateHeader> <$BlogItemDateTime$></small>
-	          <BlogItemUrl></a></BlogItemUrl>
+	        <a href="<$BlogItemPermalinkUrl$>" title="<$BlogItemTitle$>">
+              <h3 class="post-title"><$BlogItemTitle$></h3>
+	        </a>
+	        <small><BlogDateHeader><$BlogItemDateTime$></small>
           </BlogItemTitle>
          <div class="post-body"><$BlogItemBody$></div>
         </div>
@@ -120,7 +119,7 @@
               <p>Instagram</p>
             </a>
           </div>
-          <div class="col-md-7">
+          <div class="col-md-8">
             <footer class="right">All rights reserved &copy;</footer>
           </div>
         </div>
