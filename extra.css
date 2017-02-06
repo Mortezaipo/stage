@@ -18,7 +18,7 @@ hr { border-top: 1px solid #D7DCDD !important; margin:0 !important; }
 .well { background-color: #F9FAFA !important; border: 1px solid #D7DCDD !important; box-shadow: 0 3px 9px #E5E5E5; padding:0 !important; }
 .navbar-default{ background-color: #F9FAFA !important; border: 1px solid #D7DCDD !important; box-shadow: 0 3px 9px #E5E5E5; }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { background-color: #EFEFEF !important; }
-.navbar-item-fill>a { padding-right: 40px !important; }
+.navbar-item-fill>a { padding-right: 37px !important; }
 .padding-s1 { padding:20px; }
 .right-border{ border-right:1px solid #D7DCDD; }
 .btn-success { background-color: #2CCC9B !important; color: #FFF !important; border: none !important; }
