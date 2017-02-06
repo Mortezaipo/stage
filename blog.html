@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><$BlogPageTitle$></title>
+    <$BlogMetaData$>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Rochester|Sacramento" rel="stylesheet">
+    <script src="https://use.fontawesome.com/531b387394.js"></script>
+  </head>
+  <style>
+     body, a, .contact-link{ color: #525E61 !important; margin: 0 !important; }
+    .title{ font-family: 'Rochester', cursive; color: #525E61 !important; }
+    .navbar-default{ background-color: #F9FAFA !important; border: 1px solid #D7DCDD !important; box-shadow: 0 3px 9px #E5E5E5; }
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { background-color: #EFEFEF !important; }
+    .navbar-item-fill>a { padding-right: 32px !important; }
+    .menu-bar{ padding-top: 25px; }
+    .post-body, .comment-body{ font-family: "courier new" , "courier" , monospace !important; }
+    .comments-block{ margin-bottom: 5px; border-bottom: 1px solid #E5E5E5; }
+    .center, .center div{ text-align: center; }
+    hr { border-top: 1px solid #D7DCDD !important; margin:0 !important; }
+  </style>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <a href="/"><h1 class="title"><$BlogTitle$></h1></a>
+          <small><$BlogDescription$></small>
+        </div>
+        <div class="col-md-5 menu-bar">
+          <div class="navbar navbar-default">
+            <ul class="nav navbar-nav">
+              <li><a href="http://mortezaipo.com/index.html"><i class="fa fa-home"></i> Home</a></li>
+              <li><a href="http://mortezaipo.com/projects.html">Projects</a></li>
+              <li class="active"><a href="https://mortezaipo.blogspot.com/">Blog</a></li>
+              <li><a href="http://mortezaipo.com/links.html">Links</a></li>
+              <li><a href="http://mortezaipo.com/about.html">About</a></li>
+              <li><a href="http://mortezaipo.com/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <Blogger>
+        <div class="post">
+          <a name="<$BlogItemNumber$>"></a>
+          <BlogItemTitle>
+	          <BlogItemUrl><a href="<$BlogItemUrl$>" title="external link" class="title-link"></BlogItemUrl>
+            <h3 class="post-title"><$BlogItemTitle$></h3>
+            <small><BlogDateHeader><$BlogDateHeaderDate$></BlogDateHeader> <$BlogItemDateTime$></small>
+	          <BlogItemUrl></a></BlogItemUrl>
+          </BlogItemTitle>
+         <div class="post-body"><$BlogItemBody$></div>
+        </div>
+        <BlogItemCommentsEnabled>
+          <a class="comment-link" href="<$BlogItemCommentCreate$>"<$BlogItemCommentFormOnclick$>><span style="text-transform:lowercase"><$I18NNumComments$></span></a>
+        </BlogItemCommentsEnabled><BlogItemBacklinksEnabled>
+          <a class="comment-link" href="<$BlogItemPermalinkUrl$>#links"><span style="text-transform:lowercase"><$I18NLinksToThisPost$></span></a>
+        </BlogItemBacklinksEnabled>
+        
+        <ItemPage>
+          <div id="comments">
+            <BlogItemCommentsEnabled>
+              <a name="comments"></a>
+              <h4><$I18NNumComments$>:</h4>
+              <dl class="comments-block">
+                <$CommentPager$>
+                <BlogItemComments>
+                  <dt class="comment-data" id="<$BlogCommentAnchorName$>"><a name="<$BlogCommentAnchorName$>"></a>
+                    <$I18NAtCommentTimeWithPermalink$>,
+                    <$I18NCommentAuthorSaid$>
+                  </dt>
+                  <dd>
+                    <div class="comment-body"><$BlogCommentBody$></div>
+                    <$BlogCommentDeleteIcon$>
+                  </dd>
+                </BlogItemComments>
+                <$CommentPager$>
+              </dl>
+	            <p class="comment-timestamp">
+                <$BlogItemCreate$>
+              </p>
+              <p id="postfeeds"><$BlogItemFeedLinks$></p>
+            </BlogItemCommentsEnabled>	    
+
+	          <p style="padding-left:20px;">
+              <a href="<$BlogURL$>">&lt;&lt; <$I18NHome$></a>
+            </p>
+          </div>
+        </ItemPage>
+      </Blogger>
+      
+      <hr>
+      
+      <div>
+        <div class="row center">
+          <div class="col-md-1">
+            <a href="https://ir.linkedin.com/in/mortezaipo" class="contact-link" target="_blank">
+              <h4><i class="fa fa-linkedin"></i></h4>
+              <p>LinkedIn</p>
+            </a>
+          </div>
+          <div class="col-md-1">
+            <a href="https://medium.com/@mortezaipo" class="contact-link" target="_blank">
+              <h4><i class="fa fa-medium"></i></h4>
+              <p>Medium</p>
+            </a>
+          </div>
+          <div class="col-md-1">
+            <a href="https://github.com/mortezaipo" class="contact-link" target="_blank">
+              <h4><i class="fa fa-github"></i></h4>
+              <p>Github</p>
+            </a>
+          </div>
+          <div class="col-md-1">
+            <a href="https://twitter.com/mortezaipo" class="contact-link" target="_blank">
+              <h4><i class="fa fa-twitter"></i></h4>
+              <p>Twitter</p>
+            </a>
+          </div>
+          <div class="col-md-1">
+            <a href="https://www.instagram.com/mortezaipo/" class="contact-link" target="_blank">
+              <h4><i class="fa fa-instagram"></i></h4>
+              <p>Instagram</p>
+            </a>
+          </div>
+          <div class="col-md-7">
+            <footer class="right">All rights reserved &copy;</footer>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
+
