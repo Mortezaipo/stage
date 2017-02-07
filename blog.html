@@ -2,26 +2,29 @@
 <html>
   <head>
     <title><$BlogPageTitle$></title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <$BlogMetaData$>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Rochester|Sacramento" rel="stylesheet">
     <script src="https://use.fontawesome.com/531b387394.js"></script>
+    <style>
+       body, a, .contact-link{ color: #525E61 !important; margin: 0 !important; }
+      .title{ font-family: 'Rochester', cursive; color: #525E61 !important; }
+      .navbar-default{ background-color: #F9FAFA !important; border: 1px solid #D7DCDD !important; box-shadow: 0 3px 9px #E5E5E5; }
+      .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { background-color: #EFEFEF !important; }
+      .navbar-item-fill>a { padding-right: 32px !important; }
+      .menu-bar{ padding-top: 25px; }
+      .post-body, .comment-body{ font-family: "courier new" , "courier" , monospace !important; }
+      .comments-block{ margin-bottom: 5px; border-bottom: 1px solid #E5E5E5; }
+      .center, .center div{ text-align: center; }
+      hr{ border-top: 1px solid #D7DCDD !important; margin:0 !important; }
+      footer{ padding: 22px 10px; }
+      .left{ text-align: left; }
+      .right{ text-align: right; }
+      /*.cookie-choices-info{ position: fixed; top: auto !important; bottom: 0px !important; }*/
+    </style>
   </head>
-  <style>
-     body, a, .contact-link{ color: #525E61 !important; margin: 0 !important; }
-    .title{ font-family: 'Rochester', cursive; color: #525E61 !important; }
-    .navbar-default{ background-color: #F9FAFA !important; border: 1px solid #D7DCDD !important; box-shadow: 0 3px 9px #E5E5E5; }
-    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover { background-color: #EFEFEF !important; }
-    .navbar-item-fill>a { padding-right: 32px !important; }
-    .menu-bar{ padding-top: 25px; }
-    .post-body, .comment-body{ font-family: "courier new" , "courier" , monospace !important; }
-    .comments-block{ margin-bottom: 5px; border-bottom: 1px solid #E5E5E5; }
-    .center, .center div{ text-align: center; }
-    hr { border-top: 1px solid #D7DCDD !important; margin:0 !important; }
-    footer { padding: 22px 10px; }
-    .left { text-align: left; }
-    .right { text-align: right; }
-  </style>
   <body>
     <div class="container">
       <div class="row">
@@ -82,11 +85,7 @@
 	            <p class="comment-timestamp">
                 <$BlogItemCreate$>
               </p>
-              <p id="postfeeds"><$BlogItemFeedLinks$></p>
             </BlogItemCommentsEnabled>
-	          <p style="padding-left:20px;">
-              <a href="<$BlogURL$>">&lt;&lt; <$I18NHome$></a>
-            </p>
           </div>
         </ItemPage>
         <hr>
