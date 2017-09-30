@@ -1,0 +1,4 @@
+*.pyc
+*.pyo
+__pycached__
+config/stage.ini
