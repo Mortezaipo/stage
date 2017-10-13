@@ -3,8 +3,7 @@ layout: post
 title: "How To Read Source Code"
 date: 2017-10-13
 keywords: [development, develop, source, code, career, contribute]
-category: 
-permalink: /posts/:categories/:title/
+category: techniques
 excerpt_separator: <!-- more -->
 ---
 When you start working on source code of a project which you are not familiar with,

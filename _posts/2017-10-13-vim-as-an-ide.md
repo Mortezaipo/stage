@@ -3,8 +3,7 @@ layout: post
 title: "Vim As An IDE"
 date: 2017-10-13
 keywords: [tools, emacs, ide, config]
-category: 
-permalink: /posts/:categories/:title/
+category: tools
 excerpt_separator: <!-- more -->
 ---
 It's true that for fast developing and having easy-to-use environment
