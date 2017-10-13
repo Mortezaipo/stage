@@ -17,7 +17,7 @@ So I don't prefer to talk about it because it's so clear and nobody cares about 
 
 Before talking about what I've done, let's look at my Vim:
 
-![Vim screenshot]({{site.baseurl}}/images/vim-1.png)
+![Vim screenshot]({{site.baseurl}}/images/vim-1.png =250x)
 
 Looks great?
 
