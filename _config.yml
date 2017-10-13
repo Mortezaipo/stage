@@ -5,7 +5,7 @@ author: Morteza Nourelahi Alamdari
 tagline: GNU/Linux Software Developer
 description: >- # this means to ignore newlines until "baseurl:"
   GNU/Linux Software Developer
-baseurl: "/"
+baseurl: ""
 url: "http://mortezana.com"
 
 #twitter_username: mortezaipo
