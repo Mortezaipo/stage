@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<article class="posts">
+  <h3>
+    <a href="{{page.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{site.baseurl}}{{post.url}}">
+      {{page.title}}
+    </a>
+  </h3>
+  <time datetime="{{page.date}}">{{page.date | date: "%Y-%m-%d"}}</time>
+  <p>
+    {{content}}
+    <a href="{{site.baseurl}}{{page.url}}" title="read more">Read more</a>
+  </p>
+  <div class="keywords">
+    {% for keyword in page.keywords %}
+    <label class="badge badge-secondary">{{keyword}}</label>
+    {% endfor %}
+  </div>
+</article>

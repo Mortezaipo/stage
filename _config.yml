@@ -1,0 +1,17 @@
+# Site settings
+title: Morteza N.Alamdari
+email: me@mortezana.com
+author: Morteza Nourelahi Alamdari
+tagline: GNU/Linux Software Developer
+description: >- # this means to ignore newlines until "baseurl:"
+  GNU/Linux Software Developer
+baseurl: "/stage"
+url: "http://mortezana.com/stage"
+
+#twitter_username: mortezaipo
+#github_username:  mortezaipo
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed

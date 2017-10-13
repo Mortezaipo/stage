@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+.site-title {
+    font-family: 'Fira Sans', sans-serif;
+}
+.post-date {
+    color: #A0A0A0;
+}
+article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Fira Sans', sans-serif;
+}
+.navbar-extra {
+    border-radius: 4px;
+}
