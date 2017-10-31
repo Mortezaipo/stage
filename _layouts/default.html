@@ -11,7 +11,13 @@
     <link rel="stylesheet" href="{{site.baseurl}}/inc/css/main.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109061332-1"></script>
-    <script src="{{site.baseurl}}/inc/js/gtag.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109061332-1');
+    </script>
   </head>
   <body>
     <div class="container">
