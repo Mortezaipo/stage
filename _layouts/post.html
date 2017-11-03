@@ -2,7 +2,10 @@
 layout: default
 ---
 <article>
-<div class="card">
+  <div class="card">
+    <div class="post-time">
+      <time datetime="{{page.date}}">{{page.date | date: "%Y-%m-%d"}}</time>
+    </div>
   <div class="card-body">
     <article class="posts">
       <h4 class="card-title">
@@ -10,7 +13,6 @@ layout: default
 	  {{page.title}}
 	</a>
       </h4>
-      <time class="post-date" datetime="{{page.date}}">{{page.date | date: "%Y-%m-%d"}}</time>
       <p>
 	{{content}}
       </p>

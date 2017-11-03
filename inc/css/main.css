@@ -1,6 +1,3 @@
-.post-date {
-    color: #A0A0A0;
-}
 article {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -17,4 +14,14 @@ article {
     text-align: center;
     width: 77%;
     margin: auto;
+}
+.post-time {
+    background-color: #dfdfdf;
+    color: #A0A0A0;
+    border-radius: 0 0 3px 3px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 13px;
+    text-align: center;
 }

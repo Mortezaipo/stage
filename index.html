@@ -4,13 +4,15 @@ layout: default
 {% for post in site.posts %}
 <article>
   <div class="card">
+    <div class="post-time">
+      <time datetime="{{post.date}}">{{post.date | date: "%Y-%m-%d"}}</time>
+    </div>
     <div class="card-body">
       <h4 class="card-title">
         <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{site.baseurl}}{{post.url}}">
 	  {{post.title}}
 	</a>
       </h4>
-      <time datetime="{{post.date}}" class="post-date">{{post.date | date: "%Y-%m-%d"}}</time>
       <p>
 	{{post.excerpt | strip_html}}<br>
 	<a href="{{site.baseurl}}{{post.url}}" title="read more">Read more</a>
