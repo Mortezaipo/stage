@@ -1,9 +1,10 @@
-article {
-    margin-top: 10px;
-    margin-bottom: 10px;
+body {
+    margin: 0;
+    padding: 0;
+    font: 15px verdana;
 }
-.navbar-extra {
-    border-radius: 0.4rem;
+.container {
+    padding: 5px;
 }
 .screenshot {
     border-radius: 5px;
@@ -15,13 +16,29 @@ article {
     width: 77%;
     margin: auto;
 }
-.post-time {
-    background-color: #dfdfdf;
-    color: #A0A0A0;
-    border-radius: 0 0 3px 3px;
-    width: 100px;
-    position: absolute;
-    top: 0;
-    right: 13px;
-    text-align: center;
+.tiny-navbar {
+    background-color: #333;
+    display: block;
+    height: 23px;
+}
+.tiny-navbar ul {
+    margin: 0;
+    padding: 0;
+}
+.tiny-navbar ul li {
+    float: left;
+    list-style: none;
+    padding: 3px;
+    margin-right: 5px;
+}
+.tiny-navbar ul li a {
+    color: #FFF;
+    text-decoration: none;
+}
+article strong a {
+    color: #333;
+    text-decoration: none;
+}
+hr{
+    border: 1px solid #E4E4E4;
 }
