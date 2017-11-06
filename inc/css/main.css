@@ -1,10 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond|Fira+Sans|Satisfy');
 body {
     margin: 0;
     padding: 0;
-    font: 15px monospace;
-}
-.container {
-    padding: 5px;
 }
 .screenshot {
     border-radius: 5px;
@@ -17,9 +14,10 @@ body {
     margin: auto;
 }
 .tiny-navbar {
+    font: 16px 'Fira Sans', sans-serif;
     background-color: #333;
     display: block;
-    height: 23px;
+    height: 30px;
 }
 .tiny-navbar ul {
     margin: 0;
@@ -28,17 +26,52 @@ body {
 .tiny-navbar ul li {
     float: left;
     list-style: none;
-    padding: 3px;
+    padding: 6px;
     margin-right: 5px;
 }
 .tiny-navbar ul li a {
     color: #FFF;
     text-decoration: none;
 }
-article strong a {
+.post {
+    border-bottom: 1px solid #EFEFEF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.post .post-title {
+    font: 20px 'Fira Sans', sans-serif;
+    font-weight: bold;
+}
+.post .post-title a {
     color: #333;
     text-decoration: none;
 }
-hr{
-    border: 1px solid #E4E4E4;
+.post .post-body {
+    font: 17px 'Fira Sans', sans-serif;
+    color: #333;
+}
+.post .read-more {
+    border: 1px solid #333;
+    color: #FFF;
+    background-color: #333;
+    padding: 0 5px 0 5px;
+    text-decoration: none;
+}
+.highlighter-rouge {
+    border: 1px solid #E5E5E5;
+}
+.keywords .badge {
+    border: 1px solid #E5E5E5;
+    padding: 3px;
+    background-color: #A0A0A0;
+    color: #FFF;
+}
+footer {
+    padding: 5px;
+    font-size: 12px;
+}
+time {
+    font-size: small;
+    font-style: italic;
+    color: #333;
 }

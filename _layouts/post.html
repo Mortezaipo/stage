@@ -1,27 +1,21 @@
 ---
 layout: default
 ---
-<article>
-  <div class="card">
-    <div class="post-time">
-      <time datetime="{{page.date}}">{{page.date | date: "%Y-%m-%d"}}</time>
-    </div>
-  <div class="card-body">
-    <article class="posts">
-      <h4 class="card-title">
-	<a href="{{page.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{site.baseurl}}{{post.url}}">
-	  {{page.title}}
-	</a>
-      </h4>
-      <p>
-	{{content}}
-      </p>
-      <div class="keywords">
-	{% for keyword in page.keywords %}
-	<label class="badge badge-info">{{keyword}}</label>
-	{% endfor %}
-      </div>
-    </article>
+<article class="post">
+  <strong class="post-title">
+    <a href="{{page.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{site.baseurl}}{{post.url}}">
+      {{page.title}}
+    </a>
+  </strong>
+  <time datetime="{{page.date}}">{{page.date | date: "%Y-%m-%d"}}</time>
+  <div class="post-body">
+    {{content}}
   </div>
-</div>
+  <div class="post-footer">
+    <div class="keywords">
+      {% for keyword in page.keywords %}
+      <label class="badge badge-info">{{keyword}}</label>
+      {% endfor %}
+    </div>
+  </div>
 </article>

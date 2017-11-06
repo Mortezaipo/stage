@@ -2,18 +2,18 @@
 layout: default
 ---
 {% for post in site.posts %}
-<article>
+<article class="post">
   <div>
-    <strong>
+    <strong class="post-title">
       <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{site.baseurl}}{{post.url}}">
 	{{post.title}}
       </a>
-    </strong> | 
+    </strong>
     <time datetime="{{post.date}}">{{post.date | date: "%Y-%m-%d"}}</time>
-    <p>
+    <div class="post-body">
       {{post.excerpt | strip_html}}<br>
-      <a href="{{site.baseurl}}{{post.url}}" title="read more">Read more</a>
-    </p>
+      <a href="{{site.baseurl}}{{post.url}}" title="read more" class="read-more">Read more</a>
+    </div>
   </div>
 </article>
 {% endfor %}
