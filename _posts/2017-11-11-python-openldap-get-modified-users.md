@@ -13,29 +13,29 @@ To handle this situation we could implement several ways to increase sync perfor
 
 To handle this issue, you need to get openldap internal fields by adding a `+` sign at the end of search query like so:
 ```shell
-    $ ldapsearch -h localhost -w 'admin' -x -D "cn=admin,dc=example,dc=org" -b "DC=example,DC=org" +
+$ ldapsearch -h localhost -w 'admin' -x -D "cn=admin,dc=example,dc=org" -b "DC=example,DC=org" +
 ```
 
 And in python code it would like this:
-```shell
-    r = l.search_ext("dc=example,dc=org", ldap.SCOPE_SUBTREE, "objectClass=*", ["+",], 0)
+```python
+r = l.search_ext("dc=example,dc=org", ldap.SCOPE_SUBTREE, "objectClass=*", ["+",], 0)
 ```
 
 Then it returns internal fields which are important like `modifyTimestamp`.
 
 Or if you want to get all internal fields and user attributes in one request, just add `'*' '+'` like this:
-```shell
-     r = l.search_ext("dc=example,dc=org", ldap.SCOPE_SUBTREE, "objectClass=*", ["*", "+"], 0)
+```python
+r = l.search_ext("dc=example,dc=org", ldap.SCOPE_SUBTREE, "objectClass=*", ["*", "+"], 0)
 ```
 
 If you want to get last changed user after a specific date, try to add `modifyTimestamp` on query like this:
 ```shell
-    ldapsearch -h localhost -w 'admin' -x -D "cn=admin,dc=example,dc=org" -b "DC=example,DC=org" "modifyTimestamp>=20171012152507Z
+$ ldapsearch -h localhost -w 'admin' -x -D "cn=admin,dc=example,dc=org" -b "DC=example,DC=org" "modifyTimestamp>=20171012152507Z
 ```
 
 To get more info about history, try to enable `overlay accesslog` in your ldap and use it:
 ```shell
-    $ ldapsearch -x -b cn=accesslog
+$ ldapsearch -x -b cn=accesslog
 ```
 
 Resources:
