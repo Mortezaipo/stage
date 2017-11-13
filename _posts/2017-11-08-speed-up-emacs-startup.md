@@ -14,7 +14,9 @@ To solve this issue, try to apply these steps:
 
 Add this line in `/etc/profile`:
 ```
-emacs --daemon
+if [ ! `ps -x | grep emacs | grep daemon | awk '{ print $2 }'` ]; then
+  emacs --daemon 2> /dev/null
+fi
 ```
 > Relogin again to start the daemon.
 
