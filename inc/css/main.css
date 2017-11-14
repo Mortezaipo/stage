@@ -62,8 +62,16 @@ body {
     padding: 0 5px 0 5px;
     text-decoration: none;
 }
-.highlighter-rouge {
+div.highlighter-rouge,
+code.highlighter-rouge {
     border: 1px solid #E5E5E5;
+    font-size: small;
+    box-shadow: 0 0 4px #E5E5E5;
+    background-color: #E5E5E5;
+    color: #333;
+}
+div.highlighter-rouge {
+    padding-left: 10px;
 }
 .keywords .badge {
     font: 14px 'Roboto', sans-serif;
