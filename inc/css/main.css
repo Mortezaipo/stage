@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Condensed:400,700');
 body {
-    margin: 0;
+    width: 80%;
+    margin: auto;
     padding: 0;
+}
+.container {
+    border: 1px solid #EFEFEF;
+    border-top: none;
 }
 .screenshot {
     border-radius: 5px;
@@ -44,7 +49,7 @@ body {
     font-weight: 700;
 }
 .post .post-title a {
-    color: #333;
+    color: #3e3e3e;
     text-decoration: none;
 }
 .post .post-body {
@@ -68,7 +73,10 @@ body {
 }
 footer {
     padding: 5px;
+    margin: 10px;
     font-size: 12px;
+    font: 15px 'Roboto Condensed', sans-serif;
+    color: #A0A0A0;
 }
 time {
     font-size: small;
