@@ -91,6 +91,8 @@ time {
     font-size: small;
     font-style: italic;
     color: #333;
+    padding: 3px;
+    background-color: #E5E5E5;
 }
 .contact-table {
   margin: auto;
