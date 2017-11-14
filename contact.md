@@ -14,7 +14,7 @@ I'm ready for any activity such as programming, open source contribution and so 
     <td class="contact-td-icon">
       <i class="fa fa-phone"></i>
     </td>
-    <td colspan="4">
+    <td colspan="5">
       <ul class="contact-info">
         <li><strong>Mobile:</strong> +98 921 130 7441</li>
         <li><strong>Email:</strong> me@mortezana.com</li>
@@ -24,22 +24,27 @@ I'm ready for any activity such as programming, open source contribution and so 
   </tr>
   <tr class="contact-tr-icon">
     <td>
-      <a alt="My LinkedIn profile" href="https://www.linkedin.com/in/morteza-nourelahi-alamdari/">
+      <a alt="My LinkedIn page" href="https://www.linkedin.com/in/morteza-nourelahi-alamdari/">
         <i class="fa fa-linkedin"></i>
       </a>
     </td>
     <td>
-      <a alt="My Xing link" href="https://www.xing.com/profile/Morteza_NourelahiAlamdari">
+      <a alt="My Xing page" href="https://www.xing.com/profile/Morteza_NourelahiAlamdari">
         <i class="fa fa-xing"></i>
       </a>
     </td>
     <td>
-      <a alt="My Twitter link" href="https://twitter.com/mortezaipo">
+      <a alt="My Github page" href="https://github.com/mortezaipo">
+        <i class="fa fa-github"></i>
+      </a>
+    </td>
+    <td>
+      <a alt="My Twitter page" href="https://twitter.com/mortezaipo">
         <i class="fa fa-twitter"></i>
       </a>
     </td>
     <td>
-      <a alt="My Instagram link" href="https://www.instagram.com/mortezaipo/">
+      <a alt="My Instagram page" href="https://www.instagram.com/mortezaipo/">
         <i class="fa fa-instagram"></i>
       </a>
     </td>
@@ -55,6 +60,9 @@ I'm ready for any activity such as programming, open source contribution and so 
     </td>
     <td>
       <a alt="My Xing link" href="https://www.xing.com/profile/Morteza_NourelahiAlamdari">Xing</a>
+    </td>
+    <td>
+      <a alt="My Github page" href="https://github.com/mortezaipo">Github</a>
     </td>
     <td>
       <a alt="My Twitter link" href="https://twitter.com/mortezaipo">Twitter</a>
