@@ -72,6 +72,7 @@ code.highlighter-rouge {
 }
 div.highlighter-rouge {
     padding-left: 10px;
+    padding-right: 10px;
 }
 .keywords .badge {
     font: 14px 'Roboto', sans-serif;
