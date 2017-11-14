@@ -3,6 +3,11 @@ body {
     width: 80%;
     margin: auto;
     padding: 0;
+    font: 14px 'Roboto', sans-serif;
+}
+strong {
+  font: 14px 'Roboto', sans-serif;
+  font-weight: 500;
 }
 .container {
     border: 1px solid #EFEFEF;
@@ -53,7 +58,6 @@ body {
     text-decoration: none;
 }
 .post .post-body {
-    font: 14px 'Roboto', sans-serif;
     color: #333;
 }
 .post .read-more {
@@ -75,7 +79,6 @@ div.highlighter-rouge {
     padding-right: 10px;
 }
 .keywords .badge {
-    font: 14px 'Roboto', sans-serif;
     padding: 3px;
     background-color: #E5E5E5;
     color: #607d8b;
@@ -123,5 +126,43 @@ ul.contact-info {
 }
 ul.contact-info li {
   margin: 20px;
-  font: 14px 'Roboto', sans-serif;
+}
+.projects-table {
+  width: 100%;
+}
+.projects-table .td-0 {
+  width: 3%;
+}
+.projects-table .td-1 {
+  width: 10%;
+}
+.projects-table .td-2 {
+  width: 20%;
+}
+.projects-table th {
+  text-align: left;
+  padding: 5px;
+  background: #E5E5E5;
+  color: #607d8b;
+  font-weight: 500;
+}
+.projects-table tr:nth-child(event) {
+  background-color: #E5E5E5;
+}
+.projects-table tr:hover {
+  background-color: #E5E5E5;
+}
+.projects-table tr td {
+  padding: 5px;
+}
+.projects-table tr td a {
+  text-decoration: none;
+  color: #333;
+}
+.alert {
+  padding: 10px;
+  box-shadow: 0 0 4px #a59163;
+  background-color: #a59163;
+  color: #FFF;
+  margin: 10px 0;
 }
