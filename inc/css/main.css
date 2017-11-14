@@ -61,7 +61,7 @@ body {
     border: 1px solid #E5E5E5;
 }
 .keywords .badge {
-    border: 1px solid #E5E5E5;
+    font: 14px 'Roboto', sans-serif;
     padding: 3px;
     background-color: #A0A0A0;
     color: #FFF;
