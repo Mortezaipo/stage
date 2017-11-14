@@ -8,13 +8,14 @@
     <meta name="keywords" content="{% if page.keywords %}{{page.keywords|join:','}}{% else %}{{site.keywords|join:','}}{% endif %}">
     <link rel="canonical" href="{{site.baseurl}}{{page.url}}">
     <link rel="stylesheet" href="{{site.baseurl}}/inc/css/main.css">
+    {% if page.extra_css %}<link rel="stylesheet" href="{{site.baseurl}}/inc/css/{{page.extra_css}}">{% endif %}
   </head>
   <body>
     {% include header.html %}
     <div class="container">
       {{content}}
       <footer>
-	{% include footer.html %}
+	       {% include footer.html %}
       </footer>
     </div>
   </body>
