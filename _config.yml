@@ -14,5 +14,3 @@ permalink: /posts/:categories/:title/
 
 # Build settings
 markdown: kramdown
-plugins:
-  - jekyll-feed

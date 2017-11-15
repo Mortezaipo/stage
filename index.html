@@ -9,7 +9,7 @@ layout: default
 	{{post.title}}
       </a>
     </strong>
-    <time datetime="{{post.date}}">{{post.date | date: "%a %b %m, %Y"}}</time>
+    <time datetime="{{post.date}}">{{post.date | date: "%a, %d %b %Y"}}</time>
     <div class="post-body">
       {{post.excerpt | strip_html}}
       <a href="{{site.baseurl}}{{post.url}}" title="read more" class="read-more">Read more</a>

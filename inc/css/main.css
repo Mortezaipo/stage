@@ -48,6 +48,9 @@ strong {
     color: #FFF;
     text-decoration: none;
 }
+.tiny-navbar .right {
+    float: right;
+}
 .post {
     border-bottom: 1px solid #efefef;
     padding: 10px;
