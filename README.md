@@ -1,7 +1,6 @@
 # stage
 My official website.
 
-<center>
 <pre>
  ____  _                   
 / ___|| |_ __ _  __ _  ___ 
@@ -10,4 +9,3 @@ My official website.
 |____/ \__\__,_|\__, |\___|
                 |___/
 </pre>
-</center>
