@@ -40,12 +40,12 @@ $ ldapsearch -x -b cn=accesslog
 
 Resources:
 
- - Active directory `whenChanged` field: https://msdn.microsoft.com/en-us/library/ms680921(v=vs.85).aspx
- - Open ldap `modifyTimestamp` field: https://tools.ietf.org/html/rfc4512
- - Open ldap all default attributes: http://www.phpldaptools.com/reference/Default-Schema-Attributes/
- - Active Directory all default attributes: https://msdn.microsoft.com/en-us/library/ms675090(v=vs.85).aspx
- - https://www.ibm.com/support/knowledgecenter/en/SSKTMJ_9.0.1/admin/conf_usingldapsearchtoreturnoperationalattributes_t.html
- - Internal attributs: https://mail.python.org/pipermail/python-ldap/2009q3/002593.html
-    - https://mail.python.org/pipermail/python-ldap/2009q3/002594.html
- - Access log: http://www.openldap.org/doc/admin24/overlays.html#Access%20Logging
- - How to check the login history of users on openldap: https://www.openldap.org/lists/openldap-technical/201505/msg00117.html
+ - Active directory `whenChanged` field: <a href="https://msdn.microsoft.com/en-us/library/ms680921(v=vs.85).aspx" target="_blank">Microsoft MSDN doc</a>
+ - Open ldap `modifyTimestamp` field: <a href="https://tools.ietf.org/html/rfc4512" target="_blank">RFC4512</a>
+ - Open ldap all default attributes: <a href="http://www.phpldaptools.com/reference/Default-Schema-Attributes/" target="_blank">LDAP default schema attributes</a>
+ - Active Directory all default attributes: <a href="https://msdn.microsoft.com/en-us/library/ms675090(v=vs.85).aspx" target="_blank">Active Directory default schema attributes</a>
+ - <a href="https://www.ibm.com/support/knowledgecenter/en/SSKTMJ_9.0.1/admin/conf_usingldapsearchtoreturnoperationalattributes_t.html" target="_blank">ldapsearch to return operational attributes</a>
+ - Internal attributs: <a href="https://mail.python.org/pipermail/python-ldap/2009q3/002593.html" target="_blank">Internal attributes (Python org mail)</a>
+    - <a href="https://mail.python.org/pipermail/python-ldap/2009q3/002594.html" target="_blank">Internal attributes (conversation node on Python org mail)</a>
+ - Access log: <a href="http://www.openldap.org/doc/admin24/overlays.html#Access%20Logging" target="_blank">OpenLDAP access logging</a>
+ - How to check the login history of users on openldap: <a href="https://www.openldap.org/lists/openldap-technical/201505/msg00117.html" target="_blank">OpenLDAP login history of users</a>
