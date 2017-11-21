@@ -174,3 +174,6 @@ ul.contact-info li {
   border: 1px solid #00bcd4;
   margin: 10px 0;
 }
+blockquote {
+  margin: 0;
+}
