@@ -2,7 +2,6 @@
 layout: page
 title: "About"
 permalink: /about/
-extra_css: "font-awesome.min.css"
 ---
 My complete resume would be accessible in official and international websites.
 

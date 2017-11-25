@@ -9,8 +9,7 @@ keywords: ["programmer", "programming", "developer", "code", "source", "python",
 baseurl: ""
 url: "http://mortezana.com"
 permalink: /posts/:categories/:title/
-#twitter_username: mortezaipo
-#github_username:  mortezaipo
+twitter_username: mortezaipo
 
 # Build settings
 markdown: kramdown

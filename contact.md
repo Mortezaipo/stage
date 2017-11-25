@@ -2,7 +2,6 @@
 layout: page
 title: "Contact"
 permalink: /contact/
-extra_css: "font-awesome.min.css"
 ---
 Respectfully feel free to contact me.
 I'm ready for any activity such as programming, open source contribution and so on.
