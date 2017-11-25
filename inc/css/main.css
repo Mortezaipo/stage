@@ -87,12 +87,12 @@ strong {
 .post .post-share-link {
     color: #FFF;
     background-color: #00BCD4;
-    padding: 2px 5px;
+    padding: 2.5px 5px;
 }
 div.highlighter-rouge,
 code.highlighter-rouge {
     border: 1px solid #e5e5e5;
-    font-size: small;
+    font-size: initial;
     /*box-shadow: 0 0 4px #e5e5e5;*/
     background-color: #e5e5e5;
     color: #333;

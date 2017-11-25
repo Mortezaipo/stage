@@ -5,8 +5,8 @@ layout: default
 <article class="post">
   <div>
     <strong class="post-title">
-      <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{site.baseurl}}{{post.url}}">
-	{{post.title}}
+      <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}">
+	      {{post.title}}
       </a>
     </strong>
     <time datetime="{{post.date}}">{{post.date | date: "%a, %d %b %Y"}}</time>
