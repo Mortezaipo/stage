@@ -74,6 +74,16 @@ strong {
     text-decoration: none;
     white-space: nowrap;
 }
+.post-paginator {
+    float: right;
+}
+.post-paginator .page-link {
+    color: #FFF;
+    background-color: #00BCD4;
+    padding: 0 5px 0 5px;
+    text-decoration: none;
+    white-space: nowrap;
+}
 div.highlighter-rouge,
 code.highlighter-rouge {
     border: 1px solid #e5e5e5;

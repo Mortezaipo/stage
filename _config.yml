@@ -14,3 +14,8 @@ permalink: /posts/:categories/:title/
 
 # Build settings
 markdown: kramdown
+
+plugins: [jekyll-paginate]
+
+paginate: 5
+paginate_path: "/posts/page:num/"
