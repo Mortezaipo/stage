@@ -57,7 +57,7 @@ strong {
 }
 .post .post-title {
     background-color: #e5e5e5;
-    padding-bottom: 2.4px;
+    padding: 2px;
 }
 .post .post-title a {
     color: #23262E;
@@ -65,6 +65,8 @@ strong {
 }
 .post .post-body {
     color: #23262E;
+    line-height: 25px;
+    margin-top: 5px;
 }
 .post .read-more {
     color: #FFF;
@@ -85,7 +87,7 @@ strong {
 }
 .post .post-share-link {
     color: #FFF;
-    padding: 10px;
+    padding: 2px 10px;
 }
 div.highlighter-rouge,
 code.highlighter-rouge {
@@ -189,7 +191,9 @@ blockquote {
     margin: 0;
 }
 .shared-links {
-    float: right;
-    background-color: #00BCD4;
+    display: inline;
     padding: 3px;
+}
+.shared-links a {
+    background-color: #00BCD4;
 }
