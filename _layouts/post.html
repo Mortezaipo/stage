@@ -6,12 +6,14 @@ layout: default
     <a href="{{page.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{page.title}}">
       {{page.title}}
     </a>
+    <time datetime="{{page.date}}">{{page.date | date: "%a, %d %b %Y"}}</time>
   </strong>
-  <time datetime="{{page.date}}">{{page.date | date: "%a, %d %b %Y"}}</time>
 
-  <a href="https://twitter.com/intent/tweet?text={{page.title}}&url={{site.url}}{{page.url | prepend: site.baseurl}}&via={{site.twitter_username}}&related={{site.twitter_username}}" rel="nofollow" target="_blank" title="Share on Twitter" class="post-share-link"><i class="fa fa-twitter"></i></a>
-  <a href="https://plus.google.com/share?url={{site.url}}{{page.url | prepend: site.baseurl}}" rel="nofollow" target="_blank" title="Share on Google+" class="post-share-link"><i class="fa fa-google-plus"></i></a>
-  
+  <div class="shared-links">
+    <a href="https://twitter.com/intent/tweet?text={{page.title}}&url={{site.url}}{{page.url | prepend: site.baseurl}}&via={{site.twitter_username}}&related={{site.twitter_username}}" rel="nofollow" target="_blank" title="Share on Twitter" class="post-share-link"><i class="fa fa-twitter"></i></a>
+    <a href="https://plus.google.com/share?url={{site.url}}{{page.url | prepend: site.baseurl}}" rel="nofollow" target="_blank" title="Share on Google+" class="post-share-link"><i class="fa fa-google-plus"></i></a>
+  </div>
+
   <div class="post-body">
     {{content}}
   </div>

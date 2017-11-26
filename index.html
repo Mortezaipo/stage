@@ -8,8 +8,8 @@ layout: default
       <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}">
 	      {{post.title}}
       </a>
+      <time datetime="{{post.date}}">{{post.date | date: "%a, %d %b %Y"}}</time>
     </strong>
-    <time datetime="{{post.date}}">{{post.date | date: "%a, %d %b %Y"}}</time>
     <div class="post-body">
       {{post.excerpt | strip_html}}
       <a href="{{site.baseurl}}{{post.url}}" title="read more" class="read-more">Read more</a>

@@ -1,4 +1,3 @@
-/*@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Roboto+Condensed:400,700');*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand:500');
 body {
     width: 80%;
@@ -57,7 +56,8 @@ strong {
     margin-bottom: 10px;
 }
 .post .post-title {
-    text-decoration: underline;
+    background-color: #e5e5e5;
+    padding-bottom: 2.4px;
 }
 .post .post-title a {
     color: #23262E;
@@ -85,8 +85,7 @@ strong {
 }
 .post .post-share-link {
     color: #FFF;
-    background-color: #00BCD4;
-    padding: 2.5px 5px;
+    padding: 10px;
 }
 div.highlighter-rouge,
 code.highlighter-rouge {
@@ -116,77 +115,81 @@ time {
     font-size: small;
     font-style: italic;
     color: #333;
-    padding: 3px;
-    background-color: #e5e5e5;
+    padding: 0 5px 0 5px;
 }
 .contact-table {
-  margin: auto;
+    margin: auto;
 }
 .contact-td-icon ,
 .contact-tr-icon td {
-  color: #23262E;
-  padding: 5px 25px;
-  margin: 5px;
-  font-size: 50px;
+    color: #23262E;
+    padding: 5px 25px;
+    margin: 5px;
+    font-size: 50px;
 }
 .contact-tr-icon td a {
-  text-decoration: none;
-  color: #23262E;
+    text-decoration: none;
+    color: #23262E;
 }
 .contact-tr-link td,
 .contact-tr-link td a {
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 ul.contact-info {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 ul.contact-info li {
-  margin: 4px;
-  list-style: none;
+    margin: 4px;
+    list-style: none;
 }
 .projects-table {
-  width: 100%;
+    width: 100%;
 }
 .projects-table .td-0 {
-  width: 3%;
+    width: 3%;
 }
 .projects-table .td-1 {
-  width: 10%;
+    width: 10%;
 }
 .projects-table .td-2 {
-  width: 20%;
+    width: 20%;
 }
 .projects-table th {
-  text-align: left;
-  padding: 5px;
-  background: #e5e5e5;
-  color: #23262E;
-  font-weight: 500;
+    text-align: left;
+    padding: 5px;
+    background: #e5e5e5;
+    color: #23262E;
+    font-weight: 500;
 }
 .projects-table tr:nth-child(event) {
-  background-color: #e5e5e5;
+    background-color: #e5e5e5;
 }
 .projects-table tr:hover {
-  background-color: #e5e5e5;
+    background-color: #e5e5e5;
 }
 .projects-table tr td {
-  padding: 5px;
+    padding: 5px;
 }
 .projects-table tr td a {
-  text-decoration: none;
-  color: #333;
+    text-decoration: none;
+    color: #333;
 }
 .alert {
-  padding: 10px;
-  border: 1px solid #00bcd4;
-  margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #00bcd4;
+    margin: 10px 0;
 }
 blockquote {
-  margin: 0;
+    margin: 0;
+}
+.shared-links {
+    float: right;
+    background-color: #00BCD4;
+    padding: 3px;
 }
