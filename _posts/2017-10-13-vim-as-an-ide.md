@@ -2,7 +2,7 @@
 layout: post
 title: "Vim As An IDE"
 date: 2017-10-13
-keywords: [tools, emacs, ide, config]
+keywords: [tools, vim, ide, config]
 category: tools
 excerpt_separator: <!-- more -->
 ---
