@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:500');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono');
 body {
     width: 80%;
     margin: auto;
@@ -28,7 +29,7 @@ strong {
 }
 .tiny-navbar {
     font: 16px 'Quicksand', sans-serif;
-    background-color: #23262E;
+    background-color: #454054;
     display: block;
     height: 33px;
     font-weight: 400;
@@ -56,7 +57,7 @@ strong {
     margin-bottom: 10px;
 }
 .post .post-title {
-    background-color: #e5e5e5;
+    background-color: #F2F2F2;
     padding: 2px;
 }
 .post .post-title a {
@@ -70,7 +71,7 @@ strong {
 }
 .post .read-more {
     color: #FFF;
-    background-color: #ff5722;
+    background-color: #F8717D;
     padding: 0 5px 0 5px;
     text-decoration: none;
     white-space: nowrap;
@@ -80,7 +81,7 @@ strong {
 }
 .post-paginator .page-link {
     color: #FFF;
-    background-color: #00BCD4;
+    background-color: #99679E;
     padding: 0 5px 0 5px;
     text-decoration: none;
     white-space: nowrap;
@@ -91,9 +92,9 @@ strong {
 }
 div.highlighter-rouge,
 code.highlighter-rouge {
-    border: 1px solid #e5e5e5;
+    padding: 3px;
     font-size: initial;
-    background-color: #e5e5e5;
+    background-color: #F2F2F2;
     color: #333;
     font-family: 'Quicksand', sans-serif;
 }
@@ -101,10 +102,13 @@ div.highlighter-rouge {
     padding-left: 10px;
     padding-right: 10px;
 }
+div.highlight code {
+    font-family: 'Ubuntu Mono', monospace;
+}
 .keywords .badge {
     padding: 3px;
-    background-color: #e5e5e5;
-    color: #607d8b;
+    background-color: #F2F2F2;
+    color: #A0A0A0;
 }
 footer {
     padding: 5px;
@@ -124,14 +128,14 @@ time {
 }
 .contact-td-icon ,
 .contact-tr-icon td {
-    color: #23262E;
+    color: #454054;
     padding: 5px 25px;
     margin: 5px;
     font-size: 50px;
 }
 .contact-tr-icon td a {
     text-decoration: none;
-    color: #23262E;
+    color: #454054;
 }
 .contact-tr-link td,
 .contact-tr-link td a {
@@ -165,15 +169,12 @@ ul.contact-info li {
 .projects-table th {
     text-align: left;
     padding: 5px;
-    background: #e5e5e5;
+    background-color: #F2F2F2;
     color: #23262E;
     font-weight: 500;
 }
-.projects-table tr:nth-child(event) {
-    background-color: #e5e5e5;
-}
 .projects-table tr:hover {
-    background-color: #e5e5e5;
+    background-color: #F2F2F2;
 }
 .projects-table tr td {
     padding: 5px;
@@ -184,7 +185,7 @@ ul.contact-info li {
 }
 .alert {
     padding: 10px;
-    border: 1px solid #00bcd4;
+    border: 1px solid #99679E;
     margin: 10px 0;
 }
 blockquote {
@@ -195,5 +196,5 @@ blockquote {
     padding: 3px;
 }
 .shared-links a {
-    background-color: #00BCD4;
+    background-color: #99679E;
 }
