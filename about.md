@@ -3,7 +3,28 @@ layout: page
 title: "About"
 permalink: /about/
 ---
+
+I'm a passionate developer and open source enthusiast with a strong technical
+background, especially on the Python programming language and GNU/Linux platform.
+
+### Skills & Expertise:
+* Experience of Python, C and Bash Script .
+* Experience of GNU/Linux software development.
+* Experience of test-driven, design patterns and refactoring.
+* Experience of parallel programming.
+* Experience of scalability and high availabality architectures.
+* Experience of debugging.
+* Experience of Django and Tornado frameworks.
+* Experience of REST API, SOAP and WSDL.
+* Experience of PostgreSQL, Redis and Memcached.
+* Experience of Git version control software.
+* Familiar with C++ and Go.
+* Familiar with RabbitMQ and ZMQ.
+* Familiar with KVM and Docker.
+* Familiar with Agile methodology.
+
 My complete resume would be accessible in official and international websites.
+Respectfully check these links.
 
 ### Links:
 
