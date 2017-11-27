@@ -4,6 +4,8 @@ title: "About"
 permalink: /about/
 ---
 
+My name is Morteza Nourelahi Alamdari. I'm living in Tehran, Iran.
+
 I'm a passionate developer and open source enthusiast with a strong technical
 background, especially on the Python programming language and GNU/Linux platform.
 
