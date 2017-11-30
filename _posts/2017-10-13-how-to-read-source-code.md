@@ -3,6 +3,7 @@ layout: post
 title: "How To Read Source Code"
 date: 2017-10-13
 keywords: [development, develop, source, code, career, contribute]
+tags: [career, contribute]
 category: techniques
 excerpt_separator: <!-- more -->
 ---

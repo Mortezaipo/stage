@@ -3,6 +3,7 @@ layout: post
 title: "Python Shared Data Between Processes"
 date: 2017-11-20
 keywords: [programming, develop, python, parallelism, concurrency, multiprocessing, shared_data, shared_state, high_performance]
+tags: [python, concurrency, multiprocessing, shared_data, shared_state, high_performance]
 category: dev
 excerpt_separator: <!-- more -->
 ---

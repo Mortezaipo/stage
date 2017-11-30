@@ -3,6 +3,7 @@ layout: post
 title: "Memcached Quick Tutorial (Cheat Sheet)"
 date: 2017-11-25
 keywords: [cache, caching, memcached, server, service, linux]
+tags: [cache, memcached, server, service, linux]
 category: services
 excerpt_separator: <!-- more -->
 ---

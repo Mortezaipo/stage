@@ -3,6 +3,7 @@ layout: post
 title: "Python Ldap Get Modified Users"
 date: 2017-11-11
 keywords: [tools, code, python, ldap, openldap, server, service, linux]
+tags: [tools, python, ldap, server, service, linux]
 category: dev
 excerpt_separator: <!-- more -->
 ---

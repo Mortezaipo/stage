@@ -56,25 +56,30 @@ strong {
     padding: 10px;
     margin-bottom: 10px;
 }
-.post .post-title {
+.post-title {
     background-color: #F2F2F2;
     padding: 2px;
 }
-.post .post-title a {
+.post-title a {
     color: #23262E;
     text-decoration: none;
 }
-.post .post-body {
+.post-body {
     color: #23262E;
     line-height: 25px;
     margin-top: 5px;
 }
-.post .read-more {
+.color-link {
     color: #FFF;
-    background-color: #F8717D;
-    padding: 0 5px 0 5px;
+    padding: 0 5px 2px 5px;
     text-decoration: none;
     white-space: nowrap;
+}
+.read-more {
+    background-color: #F8717D;
+}
+.tag-title {
+    background-color: #EC8298;
 }
 .post-paginator {
     float: right;
@@ -82,7 +87,7 @@ strong {
 .post-paginator .page-link {
     color: #FFF;
     background-color: #99679E;
-    padding: 0 5px 0 5px;
+    padding: 0 5px 2px 5px;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -105,10 +110,13 @@ div.highlighter-rouge {
 div.highlight code {
     font-family: 'Ubuntu Mono', monospace;
 }
-.keywords .badge {
+.keywords .badge,
+.keywords .badge a {
     padding: 3px;
     background-color: #F2F2F2;
     color: #A0A0A0;
+    text-decoration: none;
+    margin-right: 3px;
 }
 footer {
     padding: 5px;
@@ -197,4 +205,29 @@ blockquote {
 }
 .shared-links a {
     background-color: #99679E;
+}
+.tags {
+    margin: 10px;
+}
+.tags ul {
+    margin: 0;
+    padding: 0px 20px;
+}
+.tags ul li {
+    list-style: none;
+    margin: 10px 0px;
+}
+.search-box {
+    border-bottom: 1px solid #efefef;
+    padding: 30px;
+    text-align: center;
+}
+.search-box input {
+    border: 1px solid #99679E;
+    padding: 10px;
+    margin: 10px;
+    width: 60%;
+}
+.search-highlight {
+    background-color: #FDA381;
 }

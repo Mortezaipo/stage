@@ -19,8 +19,10 @@ layout: default
   </div>
   <div class="post-footer">
     <div class="keywords">
-      {% for keyword in page.keywords %}
-      <label class="badge badge-info">{{keyword}}</label>
+      {% for tag in page.tags %}
+      <label class="badge badge-info">
+        <a href="{{site.baseurl}}/tags/#{{tag}}" title="Pages taged {{tag}}" rel="tag">{{tag}}</a>
+      </label>
       {% endfor %}
     </div>
   </div>

@@ -3,6 +3,7 @@ layout: post
 title: "Python Threads Termination (Force Kill)"
 date: 2017-11-21
 keywords: [programming, develop, python, parallelism, concurrency, multiprocessing, thread, multithreading, high_performance]
+tags: [python, concurrency, multiprocessing, multithreading, high_performance]
 category: dev
 excerpt_separator: <!-- more -->
 ---

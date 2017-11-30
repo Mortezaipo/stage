@@ -3,6 +3,7 @@ layout: post
 title: "Speed up Emacs Startup"
 date: 2017-11-08
 keywords: [tools, emacs, ide, config, performance]
+tags: [tools, emacs, ide, config]
 category: tools
 excerpt_separator: <!-- more -->
 ---
