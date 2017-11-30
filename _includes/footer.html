@@ -3,8 +3,8 @@ All rights reserved &copy;
 {% if paginator %}
 <div class="post-paginator">
     Pages: 
-    <a href="{{paginator.previous_page_path}}" class="page-link">Prev</a>
+    <a href="{{paginator.previous_page_path}}" class="page-link" title="Previous page">Prev</a>
     <span>{{paginator.page}} / {{paginator.total_pages}}</span>
-    <a href="{{paginator.next_page_path}}" class="page-link">Next</a>
+    <a href="{{paginator.next_page_path}}" class="page-link" title="Next page">Next</a>
 </div>
 {% endif %}
