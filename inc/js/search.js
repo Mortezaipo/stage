@@ -30,7 +30,7 @@ $(document).ready(function(){
             $(".tag-item").each(function(index, element){
                 $(element).show();
                 $(element).find(".post-title").each(function(s_index, s_element){
-                    $(s_element).children("strong").removeClass("search-highlight");
+                    $(s_element).removeClass("search-highlight");
                 });
             });
         }
@@ -41,7 +41,7 @@ $(document).ready(function(){
             $(".tag-item").each(function(index, element){
                 $(element).show();
                 $(element).find(".post-title").each(function(s_index, s_element){
-                    $(s_element).children("strong").removeClass("search-highlight");
+                    $(s_element).removeClass("search-highlight");
                 });
             });
         }
