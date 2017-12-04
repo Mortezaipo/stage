@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Config Proxy for \"apt-get\" by Tor and Privoxy"
+title: "Config Proxy for 'apt-get' by Tor and Privoxy"
 date: 2017-12-04
 keywords: [apt, apt-get, proxy, config, tor, privoxy, server, service, linux]
 tags: [tools, proxy, service, linux]
