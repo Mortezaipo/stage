@@ -139,9 +139,9 @@ pre {
 /* end post structure */
 
 /* page structure */
-.page-top-header h3 {
+.page-top-header h4 {
     margin-left: 10px;
-    font-size: 1.75rem;
+    font-size: 20px;
     background-color: #5eab99;
     display: inline;
     border-radius: 0 0 4px 4px;
