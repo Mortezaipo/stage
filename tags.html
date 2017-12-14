@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Post Tags - Search
+page_menu: Post Tags - Search
 keywords: ["search", "tags"]
 permalink: /tags/
 extra_js: ["jquery.min.js", "search.js"]
@@ -11,7 +12,7 @@ extra_js: ["jquery.min.js", "search.js"]
 
 <div class="search-box">
     <label>Search keyword:</label><br>
-    <input type="text" id="search-keyword" placeholder="Keyword">
+    <input type="text" id="search-keyword" class="form-control form-control-lg" placeholder="Keyword">
 </div>
 
 <div class="tags">
@@ -25,12 +26,12 @@ extra_js: ["jquery.min.js", "search.js"]
       <ul>
         {% for post in site.tags[tag] %}
         <li>
-          <strong class="post-title">
+          <label class="post-title">
             <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}">
                 {{post.title}}
             </a>
             <time datetime="{{post.date}}">{{post.date | date: "%a, %d %b %Y"}}</time>
-          </strong>
+          </label>
         </li>
         {% endfor %}
       </ul>

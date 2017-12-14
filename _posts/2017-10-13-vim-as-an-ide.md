@@ -1,5 +1,6 @@
 ---
 layout: post
+page_menu: Articles
 title: "Vim As An IDE"
 date: 2017-10-13
 keywords: [tools, vim, ide, config]
@@ -55,10 +56,10 @@ https://gist.github.com/Mortezaipo/638d4f7adeb564be0248fc2875295b7f
 All config parts have comments, please read them for more information.
 
 Open up your Vim in your terminal or in your desktop by GVim, then run these commands sequentially:
-```
+<pre>
 :PluginInstall
 :VimProcInstall
-```
+</pre>
 
 Then close your Vim and open it again via: 'vim .' command.
 

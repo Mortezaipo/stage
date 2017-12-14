@@ -1,5 +1,6 @@
 ---
 layout: post
+page_menu: Articles
 title: "How To Read Source Code"
 date: 2017-10-13
 keywords: [development, develop, source, code, career, contribute]

@@ -1,0 +1,24 @@
+<div class="logo-section">
+    <div class="profile-picture"></div>
+    <h5>Morteza Nourelahi Alamdari</h5>
+    <small class="profession">Senior Software Developer</small>
+</div>
+
+<div class="left-menu">
+    <div class="search-box">
+        <a href="{{site.baseurl}}/tags/" class="btn btn-block btn-light" title="Search">Search</a>
+    </div>
+
+    <ul class="list-group">
+        <li class="list-group-item"><a href="{{site.baseurl}}/" title="Home">Home</a></li>
+        <li class="list-group-item {% if page.page_menu == 'Articles' %}active{% endif%}"><a href="{{site.baseurl}}/" title="Articles">Articles</a></li>
+        <li class="list-group-item {% if page.page_menu == 'Projects' %}active{% endif%}"><a href="{{site.baseurl}}/projects/" title="Projects">Projects</a></li>
+        <!-- <li class="list-group-item {% if page.page_menu == 'Resume' %}active{% endif%}"><a href="{{site.baseurl}}/resume/" title="Resume">Resume</a></li> -->
+        <li class="list-group-item {% if page.page_menu == 'About' %}active{% endif%}"><a href="{{site.baseurl}}/about/" title="About">About</a></li>
+        <li class="list-group-item {% if page.page_menu == 'Contact' %}active{% endif%}"><a href="{{site.baseurl}}/contact/" title="Contact">Contact</a></li>
+    </ul>
+</div>
+
+<div class="copyright">
+    All rights reserved &copy;
+</div>

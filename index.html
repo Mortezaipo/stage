@@ -1,19 +1,39 @@
 ---
 layout: default
+title: Articles
+page_menu: Articles
 ---
 {% for post in paginator.posts %}
-<article class="post">
+<article class="post post-border">
   <div>
-    <strong class="post-title">
+    <label class="post-title">
       <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}">
 	      {{post.title}}
       </a>
-      <time datetime="{{post.date}}">{{post.date | date: "%a, %d %b %Y"}}</time>
-    </strong>
+      <span class="badge badge-light"><time datetime="{{post.date}}">{{post.date | date: "%a, %d %b %Y"}}</time></span>
+    </label>
     <div class="post-body">
       {{post.excerpt | strip_html}}
-      <a href="{{site.baseurl}}{{post.url}}" title="read more" class="color-link read-more">Read more</a>
+      <a href="{{site.baseurl}}{{post.url}}" title="read more" class="read-more">Read more</a>
     </div>
   </div>
 </article>
 {% endfor %}
+
+{% if paginator %}
+<nav aria-label="pagination" class="pagination-box">
+    <ul class="pagination justify-content-center">
+      {% if paginator.previous_page %}
+      <li class="page-item"><a href="{{paginator.previous_page_path}}" class="page-link" title="Previous page">Prev</a></li>
+      {% else %}
+      <li class="page-item disabled"><a href="#" class="page-link" title="Previous page">Prev</a></li>
+      {% endif %}
+
+      {% if paginator.next_page %}
+      <li class="page-item"><a href="{{paginator.next_page_path}}" class="page-link" title="Next page">Next</a></li>
+      {% else %}
+      <li class="page-item disabled"><a href="#" class="page-link" title="Next page">Next</a></li>
+      {% endif %}
+    </ul>
+</nav>
+{% endif %}

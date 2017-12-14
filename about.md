@@ -1,5 +1,6 @@
 ---
 layout: page
+page_menu: About
 title: "About"
 permalink: /about/
 ---
@@ -28,35 +29,43 @@ background, especially on the Python programming language and GNU/Linux platform
 My complete resume would be accessible in official and international websites.
 Respectfully check these links.
 
-### Links:
+<div class="center">
+  <div class="card text-white bg-primary mb-3 card-extra-link">
+    <div class="card-body">
+      <h4 class="card-title">
+        <a alt="My LinkedIn page" target="_blank" href="https://www.linkedin.com/in/morteza-nourelahi-alamdari/">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </h4>
+      <p class="card-text">
+        <a alt="My LinkedIn profile" target="_blank" href="https://www.linkedin.com/in/morteza-nourelahi-alamdari/">LinkedIn</a>
+      </p>
+    </div>
+  </div>
 
-<table class="contact-table">
-  <tr class="contact-tr-icon">
-    <td>
-      <a alt="My LinkedIn page" target="_blank" href="https://www.linkedin.com/in/morteza-nourelahi-alamdari/">
-        <i class="fa fa-linkedin"></i>
-      </a>
-    </td>
-    <td>
-      <a alt="My Xing page" target="_blank" href="https://www.xing.com/profile/Morteza_NourelahiAlamdari">
-        <i class="fa fa-xing"></i>
-      </a>
-    </td>
-    <td>
-      <a alt="My Github page" target="_blank" href="https://github.com/mortezaipo">
-        <i class="fa fa-github"></i>
-      </a>
-    </td>
-  </tr>
-  <tr class="contact-tr-link">
-    <td>
-      <a alt="My LinkedIn profile" target="_blank" href="https://www.linkedin.com/in/morteza-nourelahi-alamdari/">LinkedIn</a>
-    </td>
-    <td>
-      <a alt="My Xing link" target="_blank" href="https://www.xing.com/profile/Morteza_NourelahiAlamdari">Xing</a>
-    </td>
-    <td>
-      <a alt="My Github page" target="_blank" href="https://github.com/mortezaipo">Github</a>
-    </td>
-  </tr>
-</table>
+  <div class="card text-white bg-warning mb-3 card-extra-link">
+    <div class="card-body">
+      <h4 class="card-title">
+        <a alt="My Xing page" target="_blank" href="https://www.xing.com/profile/Morteza_NourelahiAlamdari">
+          <i class="fa fa-xing"></i>
+        </a>
+      </h4>
+      <p class="card-text">
+        <a alt="My Xing link" target="_blank" href="https://www.xing.com/profile/Morteza_NourelahiAlamdari">Xing</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="card text-white bg-dark mb-3 card-extra-link">
+    <div class="card-body">
+      <h4 class="card-title">
+        <a alt="My Github page" target="_blank" href="https://github.com/mortezaipo">
+          <i class="fa fa-github"></i>
+        </a>
+      </h4>
+      <p class="card-text">
+        <a alt="My Github page" target="_blank" href="https://github.com/mortezaipo">Github</a>
+      </p>
+    </div>
+  </div>
+</div>

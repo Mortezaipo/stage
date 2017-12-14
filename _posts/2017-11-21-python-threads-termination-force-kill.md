@@ -1,5 +1,6 @@
 ---
 layout: post
+page_menu: Articles
 title: "Python Threads Termination (Force Kill)"
 date: 2017-11-21
 keywords: [programming, develop, python, parallelism, concurrency, multiprocessing, thread, multithreading, high_performance]
@@ -13,7 +14,7 @@ But what about thread? there is no `terminate` method for thread.<!-- more -->
 
 By using <a href="https://docs.python.org/3/library/ctypes.html" target="_blank">`ctype`</a> library you can make a way to send termination request to a thread.
 
-```python
+<pre>
 import ctypes
 
 def terminate(t):
@@ -27,6 +28,6 @@ def terminate(t):
     print("thread not found!")
   elif res > 1:
     ctypes.pythonapi.PyThreadState_SetAsyncExc(ctypes.c_long(t.ident), None))
-```
+</pre>
 
 > **Note:** It's not a *certain* way and it might that your thread could not terminate as well as process.
