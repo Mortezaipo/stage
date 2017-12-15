@@ -62,7 +62,7 @@ $(document).ready(function(){
 });
 
 function google_search(keyword, element) {
-    $.get("https://www.googleapis.com/customsearch/v1?key=AIzaSyA_WzmLDuuI-4sxxfqdTdNf-gFGMqctP1g&cx=011378364823261141574:22pje6uhbnk&q=" + keyword, function(data) {
+    $.get("https://www.googleapis.com/customsearch/v1?key=AIzaSyCj-nWdcqJ5HQ_KWwtKMeEmo2TAm45M9-c&cx=011378364823261141574:vp4ddkhiyns&q=" + keyword, function(data) {
         if("items" in data) {
              for (i=0; i<data["items"].length; i++)
                  if (data["items"][i]["link"].search("\/posts\/page") > -1 || data["items"][i]["link"].search("\/tags\/") > -1)
