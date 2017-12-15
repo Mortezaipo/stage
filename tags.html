@@ -4,7 +4,6 @@ title: Post Tags - Search
 page_menu: Post Tags - Search
 keywords: ["search", "tags"]
 permalink: /tags/
-extra_js: ["jquery.min.js", "search.js"]
 ---
 {% capture site_tags %}{% for tag in site.tags %}{{tag|first}}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 

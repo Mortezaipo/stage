@@ -55,6 +55,18 @@ div.search-box a:hover {
     background-color: #fff;
     color: #868e96;
 }
+.invalid-search-input {
+    border: 1px solid #ff62a6;
+}
+#search-result {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#search-result li {
+    padding: 0;
+    margin: 10px;
+}
 /* end search box */
 
 /* left menu section */

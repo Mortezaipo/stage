@@ -46,4 +46,35 @@ $(document).ready(function(){
             });
         }
     });
+    $("#search-btn").click(function(){
+        keyword = $("#search_keyword").val()
+        if(keyword.length > 2) {
+            $("#search_keyword").removeClass("invalid-search-input");
+            $("#search-modal").modal("toggle");
+            google_search(keyword, $("#search-result"));
+        } else {
+            $("#search_keyword").addClass("invalid-search-input");
+        }
+    });
+    $("#search-modal").on("hidden.bs.modal", function(e){
+        $("#search-result").html('<div id="search-progress">Please wait... <i class="fa fa-spinner fa-pulse fa-fw"></i></div>');
+    });
 });
+
+function google_search(keyword, element) {
+    $.get("https://www.googleapis.com/customsearch/v1?key=AIzaSyA_WzmLDuuI-4sxxfqdTdNf-gFGMqctP1g&cx=011378364823261141574:22pje6uhbnk&q=" + keyword, function(data) {
+        if("items" in data) {
+             for (i=0; i<data["items"].length; i++)
+                 if (data["items"][i]["link"].search("\/posts\/page") > -1 || data["items"][i]["link"].search("\/tags\/") > -1)
+                     continue
+                 else {
+                     $("#search-progress").remove();
+                     title = data["items"][i]["title"].split(" - Morteza")[0]
+                     link = data["items"][i]["link"];
+                     $(element).append('<li><a href="' + link + '">' + title + '</a></li>');
+                 }
+        } else {
+            $(element).append('<li><h1>Not Found :(</h1></li>');
+        }
+    });
+}

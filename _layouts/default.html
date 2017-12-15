@@ -12,11 +12,16 @@
         <link rel="stylesheet" href="{{site.baseurl}}/inc/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{site.baseurl}}/inc/css/main.css">
         <link rel="stylesheet" href="{{site.baseurl}}/inc/css/font-awesome.min.css">
+        <script src="{{site.baseurl}}/inc/js/jquery.min.js"></script>
+        <script src="{{site.baseurl}}/inc/js/popper.js"></script>
+        <script src="{{site.baseurl}}/inc/js/bootstrap.min.js"></script>
+        <script src="{{site.baseurl}}/inc/js/search.js"></script>
         {% if page.extra_css %}<link rel="stylesheet" href="{{site.baseurl}}/inc/css/{{page.extra_css}}">{% endif %}
         {% if page.extra_js %}{% for js_file in page.extra_js %}<script src="{{site.baseurl}}/inc/js/{{js_file}}"></script>
         {% endfor %}{% endif %}
     </head>
     <body>
+        {% include search_modal.html %}
         <div class="container">
             <div class="row">
                 <div class="col-md-2 sidebar">
