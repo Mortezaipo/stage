@@ -75,7 +75,7 @@ function google_search(keyword, element) {
                  }
         } else {
             $("#search-progress").remove();
-            $(element).append('<li><h1>Not Found :(</h1></li>');
+            $(element).append('<li><h1 class="search-not-found">Not Found :(</h1></li>');
         }
     });
 }

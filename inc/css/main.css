@@ -67,6 +67,10 @@ div.search-box a:hover {
     padding: 0;
     margin: 10px;
 }
+.search-not-found {
+    color: #A0A0A0;
+    text-align: center;
+}
 /* end search box */
 
 /* left menu section */
