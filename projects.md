@@ -3,7 +3,7 @@ layout: page
 page_menu: Projects
 title: "Projects"
 permalink: /projects/
-extra_js: ["jquery.min.js", "projects.js"]
+extra_js: ["projects.js"]
 ---
 My open source projects are accessible in my <a alt="My Github page" target="_blank" href="https://github.com/mortezaipo">Github</a> page.
 
