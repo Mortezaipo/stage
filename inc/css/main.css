@@ -82,11 +82,14 @@ div.search-box a:hover {
     border-radius: 0 !important;
     border-bottom: 1px solid #efefef !important;
     background-color: transparent !important;
+    color: #333;
+}
+.list-group-item:hover {
+    background-color: #e0e7ab !important;
+    color: #333;
 }
 .list-group-item.active {
     background-color: #e0e7ab !important;
-}
-.list-group-item a {
     color: #333;
 }
 /* end left menu section */

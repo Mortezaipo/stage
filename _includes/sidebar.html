@@ -15,14 +15,14 @@
     </div>
 
     <ul class="list-group">
-        <li class="list-group-item"><a href="{{site.baseurl}}/" title="Home">Home</a></li>
-        <li class="list-group-item {% if page.page_menu == 'Articles' %}active{% endif%}"><a href="{{site.baseurl}}/" title="Articles">Articles</a></li>
-        <li class="list-group-item {% if page.page_menu == 'Projects' %}active{% endif%}"><a href="{{site.baseurl}}/projects/" title="Projects">Projects</a></li>
-        <!-- <li class="list-group-item {% if page.page_menu == 'Resume' %}active{% endif%}"><a href="{{site.baseurl}}/resume/" title="Resume">Resume</a></li> -->
-        <li class="list-group-item {% if page.page_menu == 'Tags' %}active{% endif%}"><a href="{{site.baseurl}}/tags/" title="Tags">Tags</a></li>
-        <li class="list-group-item {% if page.page_menu == 'About' %}active{% endif%}"><a href="{{site.baseurl}}/about/" title="About">About</a></li>
-        <li class="list-group-item {% if page.page_menu == 'Contact' %}active{% endif%}"><a href="{{site.baseurl}}/contact/" title="Contact">Contact</a></li>
-        <li class="list-group-item"><a href="{{site.baseurl}}/feed.xml" title="RSS" target="_blank"><i class="fa fa-rss"></i> RSS</a></li>
+        <a href="{{site.baseurl}}/" title="Home" class="list-group-item">Home</a>
+        <a href="{{site.baseurl}}/" title="Articles" class="list-group-item{% if page.page_menu == 'Articles' %} active{% endif%}">Articles</a>
+        <a href="{{site.baseurl}}/projects/" title="Projects" class="list-group-item{% if page.page_menu == 'Projects' %} active{% endif%}">Projects</a>
+        <!-- <a href="{{site.baseurl}}/resume/" title="Resume" class="list-group-item{% if page.page_menu == 'Resume' %} active{% endif%}">Resume</a> -->
+        <a href="{{site.baseurl}}/tags/" title="Tags" class="list-group-item{% if page.page_menu == 'Tags' %} active{% endif%}">Tags</a>
+        <a href="{{site.baseurl}}/about/" title="About" class="list-group-item{% if page.page_menu == 'About' %} active{% endif%}">About</a>
+        <a href="{{site.baseurl}}/contact/" title="Contact" class="list-group-item {% if page.page_menu == 'Contact' %}active{% endif%}">Contact</a>
+        <a href="{{site.baseurl}}/feed.xml" title="RSS" target="_blank" class="list-group-item"><i class="fa fa-rss"></i> RSS</a>
     </ul>
 </div>
 
