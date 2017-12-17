@@ -11,7 +11,7 @@ excerpt_separator: <!-- more -->
 As you know, C programming language doesn't have any built-in dictionary. There are plenty of implementation such as [Apache APR](https://apr.apache.org/) and so on. But let's build a simple one to know whats going on in the background.
 <!-- more -->
 
-We are going to implement a library which support creating dictionary and manipulating items easily.
+We are going to implement a library which support creating dictionary and manipulating its items easily.
 
 ### Basic implementation
 
@@ -151,7 +151,7 @@ int main() {
 }
 </pre>
 
-This code works fine, but it doesn't satisfy us. Because we are looking for dictionary which provided multiple keys and values
+This code works fine, but it doesn't satisfy us. Because we are looking for a dictionary which provided multiple keys and values
 like this:
 
 <pre>
