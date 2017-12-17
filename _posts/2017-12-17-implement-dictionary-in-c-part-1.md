@@ -8,7 +8,9 @@ tags: [c]
 category: dev
 excerpt_separator: <!-- more -->
 ---
-As you know, C programming language doesn't have any built-in dictionary. There are plenty of implementation such as [Apache APR](https://apr.apache.org/) and so on. But let's build a simple one to know whats going on in the background.
+As you know, C programming language doesn't have any built-in dictionary.
+There are plenty of implementation such as <a href="https://apr.apache.org/" title="Apache ARP" target="_blank">Apache APR</a>
+and so on. But let's build a simple one to know whats going on in the background.
 <!-- more -->
 
 We are going to implement a library which support creating dictionary and manipulating its items easily.
