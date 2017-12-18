@@ -64,7 +64,7 @@ void dict_update_item(dict* d, char* key, char* value) {
 Now, implement `dict_del_item` function which is responsible to destroy a dictionary and free allocated memory:
 
 <pre>
-void dict_del_item(dict *d) {
+void dict_del_item(dict* d) {
     free(d->key);
     free(d->value);
 }
@@ -131,7 +131,7 @@ void dict_update_item(dict* d, char* key, char* value) {
     strcpy(d->value, value);
 }
 
-void dict_del_item(dict *d) {
+void dict_del_item(dict* d) {
     free(d->key);
     free(d->value);
 }
