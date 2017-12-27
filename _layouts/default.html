@@ -39,7 +39,7 @@
         <meta property="org:type" content="website"/>
         <meta property="org:title" content="{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}"/>
         <meta property="org:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}"/>
-        <meta property="org:img" content="{{site.baseurl}}/img/profile.jpg"/>
+        <meta property="org:img" content="{{site.baseurl}}{% if page.image %}{{page.image}}{% else %}/img/profile.jpg{% endif %}"/>
         <!-- end open graph -->
 
         <!-- twitter -->
