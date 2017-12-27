@@ -3,22 +3,49 @@
     <head>
         <meta charset="utf-8">
         <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+
+        <!-- seo -->
         <meta name="author" content="{{site.author}}">
         <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
         <meta name="keywords" content="{% if page.keywords %}{{page.keywords|join:','}}{% else %}{{site.keywords|join:','}}{% endif %}">
+        <!-- end seo -->
+
+        <!-- site icon -->
         <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
         <link rel="icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
+        <!-- end site icon -->
+
         <link rel="canonical" href="{{site.baseurl}}{{page.url}}">
+
+        <!-- css -->
         <link rel="stylesheet" href="{{site.baseurl}}/inc/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{site.baseurl}}/inc/css/main.css">
         <link rel="stylesheet" href="{{site.baseurl}}/inc/css/font-awesome.min.css">
+        {% if page.extra_css %}<link rel="stylesheet" href="{{site.baseurl}}/inc/css/{{page.extra_css}}">{% endif %}
+        <!-- end css -->
+
+        <!-- javascript -->
         <script src="{{site.baseurl}}/inc/js/jquery.min.js"></script>
         <script src="{{site.baseurl}}/inc/js/popper.js"></script>
         <script src="{{site.baseurl}}/inc/js/bootstrap.min.js"></script>
         <script src="{{site.baseurl}}/inc/js/search.js"></script>
-        {% if page.extra_css %}<link rel="stylesheet" href="{{site.baseurl}}/inc/css/{{page.extra_css}}">{% endif %}
         {% if page.extra_js %}{% for js_file in page.extra_js %}<script src="{{site.baseurl}}/inc/js/{{js_file}}"></script>
         {% endfor %}{% endif %}
+        <!-- end javascript -->
+
+        <!-- open graph -->
+        <meta property="org:site_name" content="{{site.author}}"/>
+        <meta property="org:url" content="{{site.url}}"/>
+        <meta property="org:type" content="website"/>
+        <meta property="org:title" content="{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}"/>
+        <meta property="org:description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}"/>
+        <meta property="org:img" content="{{site.baseurl}}/img/profile.jpg"/>
+        <!-- end open graph -->
+
+        <!-- twitter -->
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content="@{{site.twitter_username}}"/>
+        <!-- end twitter -->
     </head>
     <body>
         {% include search_modal.html %}
