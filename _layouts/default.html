@@ -6,7 +6,9 @@
 
         <!-- seo -->
         <meta name="author" content="{{site.author}}">
-        <meta name="description" content="{% if page.excerpt %}{{page.excerpt | strip_html | strip_newlines | truncate:150}}{% else %}{{site.description}}{% endif %}">
+        {% if page.description %}<meta name="description" content="{{page.description}}">
+        {% elsif page.excerpt %}<meta name="description" content="{{page.excerpt | strip_html | strip_newlines | truncate:150}}">
+        {% else %}<meta name="description" content="{{site.description}}">{% endif %}
         <meta name="keywords" content="{% if page.keywords %}{{page.keywords|join:','}}{% else %}{{site.keywords|join:','}}{% endif %}">
         <!-- end seo -->
 
@@ -38,7 +40,9 @@
         <meta property="org:url" content="{{site.url}}"/>
         <meta property="org:type" content="website"/>
         <meta property="org:title" content="{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}"/>
-        <meta property="org:description" content="{% if page.excerpt %}{{page.excerpt | strip_html | strip_newlines | truncate:150}}{% else %}{{site.description}}{% endif %}"/>
+        {% if page.description %}<meta property="org:description" content="{{page.description}}"/>
+        {% elsif page.excerpt %}<meta property="org:description" content="{{page.excerpt | strip_html | strip_newlines | truncate:150}}"/>
+        {% else %}<meta name="description" content="{{site.description}}">{% endif %}
         <meta property="org:img" content="{{site.baseurl}}{% if page.image %}{{page.image}}{% else %}/img/profile.jpg{% endif %}"/>
         <!-- end open graph -->
 

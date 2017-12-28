@@ -4,6 +4,7 @@ page_menu: Projects
 title: "Projects"
 permalink: /projects/
 extra_js: ["projects.js"]
+description: List of projects which I've involved
 ---
 My open source projects are accessible in my <a alt="My Github page" target="_blank" href="https://github.com/mortezaipo">Github</a> page.
 

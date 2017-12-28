@@ -3,6 +3,7 @@ layout: page
 page_menu: Contact
 title: "Contact"
 permalink: /contact/
+description: Contact page
 ---
 Respectfully feel free to contact me.
 I'm ready for any activity such as programming, open source contribution and so on.

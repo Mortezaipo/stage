@@ -3,6 +3,7 @@ layout: page
 page_menu: About
 title: "About"
 permalink: /about/
+description: Brief description about myself
 ---
 
 My name is Morteza Nourelahi Alamdari. I'm living in Tehran, Iran.
