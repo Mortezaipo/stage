@@ -1,6 +1,7 @@
 /* main structure */
 html, body {
     height: 100%;
+    color: #414252;
 }
 div.sidebar {
     padding: 0;
@@ -75,7 +76,7 @@ div.search-box a:hover {
 
 /* left menu section */
 .left-menu {
-    background: linear-gradient(#f5f6fa, #fff);
+    background: linear-gradient(#f8f9fc, #fff);
 }
 .list-group-item {
     border: none !important;
@@ -85,11 +86,11 @@ div.search-box a:hover {
     color: #333;
 }
 .list-group-item:hover {
-    background-color: #e0e7ab !important;
+    background-color: #ebebeb !important;
     color: #333;
 }
 .list-group-item.active {
-    background-color: #e0e7ab !important;
+    background-color: #ebebeb !important;
     color: #333;
 }
 /* end left menu section */
@@ -115,7 +116,7 @@ div.copyright {
     color: #A0A0A0;
 }
 a.read-more {
-    color: #e96b56;
+    color: #f05271;
     white-space: nowrap;
 }
 .pagination-box {
@@ -127,18 +128,19 @@ a.read-more {
 .post-title,
 .post-title a {
     background-color: #f8f9fa;
-    color: #000;
+    color: #414252;
     border-bottom: 1px solid #a0a0a0;
     text-decoration: none;
     display: inline;
+    font-weight: bold;
 }
 .share-links {
     display: inline;
     margin-left: 5px;
 }
 .share-links .share-btn {
-    color: #a2cfa5;
-    border: 1px solid #a2cfa5;
+    color: #f05271;
+    border: 1px solid #f05271;
     padding: 0 10px;
 }
 pre {
@@ -161,7 +163,7 @@ pre {
 .page-top-header h4 {
     margin-left: 10px;
     font-size: 20px;
-    background-color: #5eab99;
+    background-color: #528df0;
     display: inline;
     border-radius: 0 0 4px 4px;
     padding: 5px 5px;
