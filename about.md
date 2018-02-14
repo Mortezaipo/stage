@@ -8,25 +8,24 @@ description: Brief description about myself
 
 My name is Morteza Nourelahi Alamdari. I'm living in Tehran, Iran.
 
-I'm a passionate developer and open source enthusiast with a strong technical
-background, especially on the Python programming language and GNU/Linux platform.
+A passionate developer and open source enthusiast with a strong technical
+background, especially on Python programming language and Linux platform.
 
 ### Skills & Expertise:
 
-* Experience of Python and Bash Script.
+* Experience of Python, C and Bash Script.
 * Experience of GNU/Linux software development.
 * Experience of software architectures.
 * Experience of test-driven, design patterns and refactoring.
-* Experience of parallel programming.
+* Experience of concurrent programming.
 * Experience of distributed systems programming.
-* Experience of scaling and high availability architectures.
+* Experience of scalable and high availability architectures.
 * Experience of debugging.
-* Experience of Django and Tornado frameworks.
+* Experience of Django, Tornado and Flask frameworks.
 * Experience of REST API and SOAP.
 * Experience of PostgreSQL, Redis and Memcached.
 * Experience of RabbitMQ and ZMQ.
 * Experience of Git version control software.
-* Familiar with C and Go.
 * Familiar with Docker.
 * Familiar with Agile methodology.
 
