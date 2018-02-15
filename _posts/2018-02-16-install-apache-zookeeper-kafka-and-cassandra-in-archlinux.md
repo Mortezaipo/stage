@@ -18,7 +18,7 @@ $ pacman -S jdk8-openjdk jre8-openjdk gradle scala
 $ mkdir ~/Applications/
 ```
 
-## Zookeepr
+## Zookeeper
 ```
 $ wget -c http://www-us.apache.org/dist/zookeeper/stable/zookeeper-3.4.10.tar.gz
 $ tar xzf zookeeper-3.4.10.tar.gz -C ~/Applications/
