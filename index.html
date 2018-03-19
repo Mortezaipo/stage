@@ -3,6 +3,7 @@ layout: default
 page_menu: Articles
 ---
 {% for post in paginator.posts %}
+{% if post.enable %}
 <article class="post post-border">
   <div>
     <label class="post-title">
@@ -17,6 +18,7 @@ page_menu: Articles
     </div>
   </div>
 </article>
+{% endif %}
 {% endfor %}
 
 {% if paginator %}

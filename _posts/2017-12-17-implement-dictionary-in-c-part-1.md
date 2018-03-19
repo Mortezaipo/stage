@@ -6,6 +6,7 @@ date: 2017-12-17
 keywords: [c, hash_table, dictionary]
 tags: [c]
 category: dev
+enable: false
 excerpt_separator: <!-- more -->
 ---
 As you know, C programming language doesn't have any built-in dictionary.
