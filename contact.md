@@ -97,15 +97,3 @@ I'm ready for any activity such as programming, open source contribution and so 
   </div>
 </div>
 
-<div class="card text-white bg-primary mb-3 card-extra-link">
-  <div class="card-body">
-    <h4 class="card-title">
-      <a alt="My Telegram link" target="_blank" href="https://t.me/mortezaipo">
-        <i class="fa fa-telegram"></i>
-      </a>
-    </h4>
-    <p class="card-text">
-      <a alt="My Telegram link" target="_blank" href="https://t.me/mortezaipo">Telegram</a>
-    </p>
-  </div>
-</div>
