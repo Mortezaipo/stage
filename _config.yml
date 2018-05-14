@@ -14,7 +14,8 @@ twitter_username: mortezaipo
 # Build settings
 markdown: kramdown
 
-plugins: [jekyll-paginate]
+gems: [jekyll-paginate]
+plugins_dir: [jekyll-paginate]
 
 paginate: 10
 paginate_path: "/posts/page:num/"
