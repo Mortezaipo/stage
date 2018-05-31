@@ -1,5 +1,6 @@
 /* main structure */
 @import url('https://fonts.googleapis.com/css?family=Zilla+Slab:500,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:500,600,700');
 html, body {
     height: 100%;
     color: #39424E; /*#414252;*/
@@ -13,7 +14,8 @@ div.body {
     padding: 0;
     font-weight: 500;
     color: #4E4242;
-    font-family: 'Zilla Slab', serif;
+    /*font-family: 'Zilla Slab', serif;*/
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
 }
 /* end main structure */
@@ -138,7 +140,8 @@ a.read-more {
     text-decoration: none;
     display: inline;
     font-weight: bold;
-    font-family: 'Zilla Slab', serif;
+    /*font-family: 'Zilla Slab', serif;*/
+    font-family: 'Raleway', sans-serif;
 }
 .share-links {
     display: inline;
