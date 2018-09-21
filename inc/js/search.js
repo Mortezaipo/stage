@@ -67,7 +67,7 @@ function google_search(keyword, element) {
              for (i=0; i<data["items"].length; i++)
                  if (data["items"][i]["link"].search("\/posts\/page") > -1 || data["items"][i]["link"].search("\/tags\/") > -1)
                      continue
-                 else if (data["items"][i]["link"] == "http://mortezana.com" || data["items"][i]["link"] == "mortezana.com")
+                 else if (data["items"][i]["link"] == "http://mortezana.com/" || data["items"][i]["link"] == "mortezana.com/")
                      continue
                  else {
                      $("#search-progress").remove();
