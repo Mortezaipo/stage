@@ -285,6 +285,10 @@ pre {
     background-color: #ee758b;
     border-color: #ee758b;
 }
+.btn-pink:hover, .btn-pink:active {
+    background-color: #644462 !important;
+    border-color: #644462;
+}
 /* end misc */
 
 /* form process */
