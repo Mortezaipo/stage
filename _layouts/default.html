@@ -22,7 +22,7 @@
         <!-- css -->
         <link rel="stylesheet" href="{{site.baseurl}}/inc/css/bootstrap.min.css">
         <link rel="stylesheet" href="{{site.baseurl}}/inc/css/main.css">
-        <link rel="stylesheet" href="{{site.baseurl}}/inc/css/font-awesome.min.css">
+        <link rel="stylesheet" href="{{site.baseurl}}/inc/css/fontawesome.min.css">
         {% if page.extra_css %}<link rel="stylesheet" href="{{site.baseurl}}/inc/css/{{page.extra_css}}">{% endif %}
         <!-- end css -->
 
@@ -54,16 +54,19 @@
     <body>
         {% include search_modal.html %}
         <div class="container">
-            <div class="row">
-                <div class="col-md-2 sidebar">
-                    {% include sidebar.html %}
-                </div>
-                <div class="col-md-10 body">
+            <div>
+                {% include top_nav.html %}
+            </div>
+            <div>
+                <div class="col-md-12 body">
                     <div class="page-top-header">
                         <h4><i class="fa fa-arrow-circle-down"></i> {{page.page_menu}}</h4>
                     </div>
                     {{content}}
                 </div>
+            </div>
+            <div>
+                {% include footer.html %}
             </div>
         </div>
     </body>

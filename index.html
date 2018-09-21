@@ -4,7 +4,7 @@ page_menu: Articles
 ---
 {% for post in paginator.posts %}
 {% if post.is_draft != true %}
-<article class="post post-border">
+<article class="post{% if forloop.index0 == 0 %} post-no-top-margin{% endif %} post-border">
   <div>
     <label class="post-title">
       <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}">

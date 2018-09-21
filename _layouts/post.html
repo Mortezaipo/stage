@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="post post-no-top-margin">
   <label class="post-title">
     <a href="{{page.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{page.title}}">
       {{page.title}}
@@ -10,8 +10,8 @@ layout: default
   </label>
 
   <div class="share-links">
-    <a href="https://twitter.com/intent/tweet?text={{page.title}}&url={{site.url}}{{page.url | prepend: site.baseurl}}&via={{site.twitter_username}}&related={{site.twitter_username}}" rel="nofollow" target="_blank" title="Share on Twitter" class="share-btn"><i class="fa fa-twitter"></i></a>
-    <a href="https://plus.google.com/share?url={{site.url}}{{page.url | prepend: site.baseurl}}" rel="nofollow" target="_blank" title="Share on Google+" class="share-btn"><i class="fa fa-google-plus"></i></a>
+    <a href="https://twitter.com/intent/tweet?text={{page.title}}&url={{site.url}}{{page.url | prepend: site.baseurl}}&via={{site.twitter_username}}&related={{site.twitter_username}}" rel="nofollow" target="_blank" title="Share on Twitter" class="share-btn"><i class="fab fa-twitter"></i></a>
+    <a href="https://plus.google.com/share?url={{site.url}}{{page.url | prepend: site.baseurl}}" rel="nofollow" target="_blank" title="Share on Google+" class="share-btn"><i class="fab fa-google-plus"></i></a>
   </div>
 
   <div class="post-body">
