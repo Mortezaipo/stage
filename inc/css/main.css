@@ -133,6 +133,9 @@ a.read-more:hover, a:hover {
 .pagination-box {
     padding: 10px;
 }
+.page-link {
+    color: rgb(33, 37, 41) !important;
+}
 /* end post list section */
 
 /* post structure */
