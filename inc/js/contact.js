@@ -16,5 +16,6 @@ $(document).ready(function(){
             $("#submit-message").removeAttr("disabled");
             $("#form-process").fadeOut('fast');
         });
+	grecaptcha.reset();
     });
 });
