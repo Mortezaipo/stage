@@ -31,7 +31,7 @@
         <script src="{{site.baseurl}}/inc/js/popper.js"></script>
         <script src="{{site.baseurl}}/inc/js/bootstrap.min.js"></script>
         <script src="{{site.baseurl}}/inc/js/search.js"></script>
-        {% if page.extra_js %}{% for js_file in page.extra_js %}<script src="{{site.baseurl}}/inc/js/{{js_file}}"></script>
+        {% if page.extra_js %}{% for js_file in page.extra_js %}{% if js_file contains "http" %}<script src="{{js_file}}"></script>{% else %}<script src="{{site.baseurl}}/inc/js/{{js_file}}"></script>{% endif %}
         {% endfor %}{% endif %}
         <!-- end javascript -->
 

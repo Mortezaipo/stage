@@ -3,7 +3,7 @@ layout: page
 page_menu: Contact
 title: "Contact"
 permalink: /contact/
-extra_js: ["contact.js"]
+extra_js: ["contact.js", "https://www.google.com/recaptcha/api.js"]
 description: Contact page
 ---
 <p>
@@ -44,8 +44,13 @@ I'm ready for any activity such as programming, open source contribution and so 
                     <textarea class="form-control" id="message" placeholder="Message" name="message" rows=5></textarea>
                 </div>
             </div>
+	    <div class="row">
+	        <div class="col-md-12">
+	            <div class="g-recaptcha" data-sitekey="6Ldsj3YUAAAAAPEvnlrbfyo2Hotg36L5gNfV-0LO"></div>
+		</div>
+	    </div>
             <div class="row">
-                <div class="form-group col-md-12">
+                <div class="form-group col-md-12 mt-2">
                     <input type="button" value="Send Message" id="submit-message" class="btn btn-dark btn-pink">
                 </div>
             </div>
