@@ -1,40 +1,48 @@
----
-layout: default
-page_menu: Articles
----
-{% for post in paginator.posts %}
-{% if post.is_draft != true %}
-<article class="post{% if forloop.index0 == 0 %} post-no-top-margin{% endif %} post-border">
-  <div>
-    <label class="post-title">
-      <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}">
-	      {{post.title}}
-      </a>
-      <span class="badge badge-light"><time datetime="{{post.date}}">{{post.date | date: "%a, %d %b %Y"}}</time></span>
-    </label>
-    <div class="post-body">
-      {{post.excerpt | strip_html}}
-      <a href="{{site.baseurl}}{{post.url}}" title="read more" class="read-more">Read more</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        @font-face {font-family: 'hack'; src: url("Hack-Regular.ttf");}
+
+        body {
+            background-color: #00283c;
+            color: #4caf50;
+            margin-top:250px;
+        }
+
+        #title pre {
+            font-family: 'hack', monospace;
+            color: #8bc34a;
+        }
+
+        #main {
+            text-align: center;
+        }
+
+        #main a {
+            font-family: 'hack', monospace;
+            color: #4caf50;
+        }
+    </style>
+</head>
+<body>
+
+<div id="main">
+    <div id="title">
+        <pre>
+.88b  d88.  .d88b.  d8888b. d888888b d88888b d88888D  .d8b.
+88'YbdP`88 .8P  Y8. 88  `8D `~~88~~' 88'     YP  d8' d8' `8b
+88  88  88 88    88 88oobY'    88    88ooooo    d8'  88ooo88
+88  88  88 88    88 88`8b      88    88~~~~~   d8'   88~~~88
+88  88  88 `8b  d8' 88 `88.    88    88.      d8' db 88   88
+YP  YP  YP  `Y88P'  88   YD    YP    Y88888P d88888P YP   YP
+<a title="Resume" href="https://github.com/mortezaipo/resume/releases/download/latest/resume.pdf" target="_blank">Resume</a> - <a title="Github" href="https://github.com/mortezaipo" target="_blank">Github</a> - <a title="LinkedIn" href="https://www.linkedin.com/in/morteza-nourelahi-alamdari/" target="_blank">LinkedIn</a> - <a title="Twitter" href="https://twitter.com/mortezaipo" target="_blank">Twitter</a>                <a title="Email" href="mailto:m@0t1.me">m@0t1.me</a>
+        </pre>
     </div>
-  </div>
-</article>
-{% endif %}
-{% endfor %}
+</div>
 
-{% if paginator %}
-<nav aria-label="pagination" class="pagination-box">
-    <ul class="pagination justify-content-center">
-      {% if paginator.previous_page %}
-      <li class="page-item"><a href="{{paginator.previous_page_path}}" class="page-link" title="Previous page">Prev</a></li>
-      {% else %}
-      <li class="page-item disabled"><a href="#" class="page-link" title="Previous page">Prev</a></li>
-      {% endif %}
-
-      {% if paginator.next_page %}
-      <li class="page-item"><a href="{{paginator.next_page_path}}" class="page-link" title="Next page">Next</a></li>
-      {% else %}
-      <li class="page-item disabled"><a href="#" class="page-link" title="Next page">Next</a></li>
-      {% endif %}
-    </ul>
-</nav>
-{% endif %}
+</body>
+</html>
