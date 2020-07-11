@@ -1,0 +1,38 @@
+title: ZeroToOne
+email: m@0t1.me
+author: Morteza NourelahiAlamdari
+tagline: Senior Software Engineer
+description: >-
+  Senior Software Engineer
+keywords: [
+  "programmer",
+  "programming",
+  "developer",
+  "code",
+  "source",
+  "linux",
+  "gnu",
+  "python",
+  "c",
+  "c++",
+  "tools"
+]
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://0t1.me/"
+permalink: /posts/:categories/:title/
+twitter_username: mortymacs
+github_username: mortymacs
+instagram_username: mortymacs
+
+markdown: kramdown
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+gems: [jekyll-paginate]
+plugins_dir: [jekyll-paginate]
+
+paginate: 7
+paginate_path: "/posts/page:num/"

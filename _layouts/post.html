@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<div>
+    <div class="post-title">
+        <a href="{{page.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{page.title}}"
+           class="text-body">{{page.title}}</a>
+        <small>{{page.date | date: "%Y %b %m"}}</small>
+    </div>
+</div>
+
+<div class="mt-10">
+    {{content}}
+    {% if page.references %}
+    <fieldset>
+        <legend>Reference{% if page.references.size > 1 %}s{% endif %}</legend>
+        <ul>
+            {% for reference in page.references %}
+            <li>{{reference}}</li>
+            {% endfor %}
+        </ul>
+    </fieldset>
+    {% endif %}
+</div>
