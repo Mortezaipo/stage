@@ -59,6 +59,7 @@ hr {
 
 .highlighter-rouge {
     background-color: #e1e2e2;
+    font-family: hack, monospace, sans-serif;
 }
 
 .highlighter-rouge * {
