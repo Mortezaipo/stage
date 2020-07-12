@@ -1,5 +1,5 @@
 * {
-    font-family: hack, monospace, sans-serif;
+    font-family: sans-serif, helvetica;
     font-size: 15px;
 }
 
@@ -61,9 +61,11 @@ hr {
     background-color: #e1e2e2;
 }
 
+.highlighter-rouge * {
+    font-family: hack, monospace, sans-serif;
+}
+
 fieldset {
     border: 1px solid #A0A0A0;
     padding: 5px;
 }
-
-/* end Bootstrap changing */
