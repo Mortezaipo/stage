@@ -64,6 +64,7 @@ hr {
 
 .highlighter-rouge * {
     font-family: hack, monospace, sans-serif;
+    margin: 0;
 }
 
 fieldset {
