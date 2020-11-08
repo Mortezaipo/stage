@@ -2,31 +2,28 @@
 layout: default
 page_menu: Home
 ---
-{% for post in paginator.posts %}
-{% if post.is_draft != true %}
-<div class="mb-5">
-  <div>
-    <div class="post-title">
-      <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}" class="text-body">{{post.title}}</a>
-      <small>{{post.date | date: "%Y %b %m"}}</small>
+<div class="mt-3 mb-3">
+    {% include header.html %}
+</div>
+<h3 class="mb-3">Active Open Source Projects:</h3>
+{% for project in site.projects %}
+{% if project.visibility %}
+<div class="card bg-light mb-3 d-inline-block">
+    <div class="card-body">
+        <h1 class="text-center"><i class="{{project.icon}}"></i></h1>
+        <h5 class="card-title">{{project.title}}</h5>
+        <p class="card-text">{{project.content}}</p>
+        <div class="progress">
+            <div class="progress-bar {{project.progress_color}}" role="progressbar"
+                 style="width: {{project.progress_percentage}}%;" aria-valuenow="{{project.progress_percentage}}"
+                 aria-valuemin="0" aria-valuemax="100">{{project.progress_percentage}}%
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="card-footer">
+        <!-- source of datetime command: https://stackoverflow.com/a/12466337/2338672 -->
+        <small class="text-muted">Last updated {{site.time | date: "%c"}}</small>
+    </div>
 </div>
 {% endif %}
 {% endfor %}
-
-{% if paginator %}
-<div class="mt-10">
-    {% if paginator.previous_page %}
-    <a href="{{paginator.previous_page_path}}" class="page-link" title="Previous page">< Prev</a>
-    {% else %}
-    <a href="#" class="page-link" title="Previous page">< Prev</a>
-    {% endif %}
-
-    {% if paginator.next_page %}
-    <a href="{{paginator.next_page_path}}" class="page-link" title="Next page">Next ></a>
-    {% else %}
-    <a href="#" class="page-link" title="Next page">Next ></a>
-    {% endif %}
-</div>
-{% endif %}

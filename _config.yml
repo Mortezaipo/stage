@@ -26,6 +26,9 @@ instagram_username: mortymacs
 
 markdown: kramdown
 
+collections:
+  - projects
+
 # Build settings
 plugins:
   - jekyll-feed

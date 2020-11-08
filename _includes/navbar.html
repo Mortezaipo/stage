@@ -1,6 +1,31 @@
-<a title="Home" href="{{site.baseurl}}/">Home</a>
-<a title="Resume" href="https://github.com/mortymacs/resume/releases/download/latest/resume.pdf" target="_blank">Resume</a>
-<a title="Github" href="https://github.com/mortymacs" target="_blank">Github</a>
-<a title="LinkedIn" href="https://www.linkedin.com/in/morteza-nourelahi-alamdari/" target="_blank">LinkedIn</a>
-<a title="Twitter" href="https://twitter.com/mortymacs" target="_blank">Twitter</a>
-<a title="Email" href="mailto:m@0t1.me" target="_blank">m@0t1.me</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Mort</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link{% if page.page_menu == 'Blog' %} active{% endif%}" title="Blog" href="{{site.baseurl}}/blog">Blog</a>
+                <a class="nav-link" title="Résumé"
+                   href="https://github.com/mortymacs/resume/releases/download/latest/resume.pdf"
+                   target="_blank">Résumé</a>
+                <a class="nav-link" title="Email" href="mailto:m@0t1.me" target="_blank">Contact</a>
+                <a class="nav-link" title="Email" href="https://calendly.com/mortymacs/meet-mort" target="_blank">
+                    <i class="far fa-calendar-alt"></i> Appointment
+                </a>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="navbar-nav">
+                <a class="nav-link" title="Github" href="https://github.com/mortymacs" target="_blank"><i
+                        class="fab fa-github"></i></a>
+                <a class="nav-link" title="Twitter" href="https://twitter.com/mortymacs" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="nav-link" title="LinkedIn" href="https://www.linkedin.com/in/morteza-nourelahi-alamdari/"
+                   target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
