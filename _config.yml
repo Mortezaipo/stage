@@ -19,7 +19,7 @@ keywords: [
 ]
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://0t1.me/"
-permalink: /posts/:categories/:title/
+permalink: /blog/:categories/:year/:month/:day/:title
 twitter_username: mortymacs
 github_username: mortymacs
 instagram_username: mortymacs
