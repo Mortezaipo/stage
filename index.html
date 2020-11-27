@@ -5,25 +5,57 @@ page_menu: Home
 <div class="mt-3 mb-3">
     {% include header.html %}
 </div>
-<h3 class="mb-3">Active Open Source Projects:</h3>
-{% for project in site.projects %}
-{% if project.visibility %}
-<div class="card bg-light mb-3 d-inline-block">
-    <div class="card-body">
-        <h1 class="text-center"><i class="{{project.icon}}"></i></h1>
-        <h5 class="card-title">{{project.title}}</h5>
-        <p class="card-text">{{project.content}}</p>
-        <div class="progress">
-            <div class="progress-bar {{project.progress_color}}" role="progressbar"
-                 style="width: {{project.progress_percentage}}%;" aria-valuenow="{{project.progress_percentage}}"
-                 aria-valuemin="0" aria-valuemax="100">{{project.progress_percentage}}%
+
+<h3 class="section-title m-0">Active Projects</h3>
+<small class="text-muted">Open source projects which are under development.</small>
+<div class="mt-3">
+    {% for project in site.projects %}
+    {% if project.visibility %}
+    <div class="card mb-3 rounded">
+        <div class="row g-0">
+            <div class="col-md-2">
+                <img src="media/{{project.image}}" alt="{{project.title}} picture" class="rounded-left">
+            </div>
+            <div class="col-md-10">
+                <div class="card-body">
+                    <h5 class="card-title project-title">{{project.title}}</h5>
+                    <p class="card-text">{{project.content}}</p>
+                    <p>Percentage {{project.progress_percentage}}%</p>
+                    <p class="card-text">
+                        <!-- source of datetime command: https://stackoverflow.com/a/12466337/2338672 -->
+                        <small class="text-muted">Last updated {{site.time | date: "%c"}}</small>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
-    <div class="card-footer">
-        <!-- source of datetime command: https://stackoverflow.com/a/12466337/2338672 -->
-        <small class="text-muted">Last updated {{site.time | date: "%c"}}</small>
-    </div>
+    {% endif %}
+    {% endfor %}
 </div>
-{% endif %}
-{% endfor %}
+
+<h3 class="section-title m-0">Last Blog Posts</h3>
+<small class="text-muted">Sharing some experiences, knowledge, and hacks.</small>
+<div class="mt-3">
+    {% for post in site.posts limit:2 %}
+    {% if post.is_draft != true %}
+    <div class="mb-3">
+        <div>
+            <div>
+                <small class="text-dark">{{post.date | date: "%Y %b %m"}}</small>
+                <h3>
+                    <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark"
+                       title="Permanent link to {{post.title}}"
+                       class="post-title">{{post.title}}</a>
+                </h3>
+                <div class="post-body">{{post.excerpt | strip_html}}</div>
+                <div>
+                    <a href="{{post.url | prepend: site.baseurl}}" class="btn btn-outline-secondary mt-2 mb-2">Read More
+                        <i class="fas fa-angle-right ml-1"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>

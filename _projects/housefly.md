@@ -1,7 +1,7 @@
 ---
-title: Housefly
-icon: fas fa-cogs
+title: housefly
 progress_percentage: 20
+image: housefly.jpg
 progress_color: bg-info
 visibility: true
 ---

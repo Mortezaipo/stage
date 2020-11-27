@@ -1,6 +1,11 @@
 @font-face {
-    font-family: "PlayfairDisplay";
-    src: url("../webfonts/PlayfairDisplay-VariableFont_wght.ttf");
+    font-family: "PlayfairDisplay-Bold";
+    src: url("../webfonts/PlayfairDisplay-Bold.ttf");
+}
+
+@font-face {
+    font-family: "PlayfairDisplay-Medium";
+    src: url("../webfonts/PlayfairDisplay-Medium.ttf");
 }
 
 @font-face {
@@ -19,8 +24,18 @@ body,
     padding: 5px;
 }
 
+.section-title,
+.project-title,
+.intro {
+    font-family: "PlayfairDisplay-Bold", serif;
+}
+
 .post-title {
-    font-family: "PlayfairDisplay", serif;
+    font-family: "PlayfairDisplay-Medium", serif;
+}
+
+.post-title,
+.section-title {
     text-decoration: none;
     color: #000;
 }
