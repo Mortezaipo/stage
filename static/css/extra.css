@@ -3,14 +3,24 @@
     src: url("../webfonts/PlayfairDisplay-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: "PTSans-Regular";
+    src: url("../webfonts/PTSans-Regular.ttf");
+}
+
+body,
+.post-body {
+    font-family: "PTSans-Regular", serif;
+}
+
 .highlighter-rouge {
-    border:1px solid #A0A0A0;
+    border: 1px solid #A0A0A0;
     border-radius: 4px;
     padding: 5px;
 }
 
 .post-title {
-    font-family: "PlayfairDisplay";
+    font-family: "PlayfairDisplay", serif;
     text-decoration: none;
     color: #000;
 }
