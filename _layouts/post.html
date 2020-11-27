@@ -2,9 +2,11 @@
 layout: default
 ---
 <div>
-    <div class="post-title">
-        <a href="{{page.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{page.title}}"
-           class="text-body">{{page.title}}</a>
+    <div>
+        <h1>
+            <a href="{{page.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{page.title}}"
+               class="post-title">{{page.title}}</a>
+        </h1>
         <small>{{page.date | date: "%Y %b %m"}}</small>
     </div>
 </div>

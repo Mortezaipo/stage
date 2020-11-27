@@ -6,10 +6,10 @@ page_menu: Blog
 {% if post.is_draft != true %}
 <div class="mb-3">
     <div>
-        <div class="post-title">
+        <div>
             <h4>
             <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}"
-               class="text-body">{{post.title}}</a>
+               class="text-body post-title">{{post.title}}</a>
             </h4>
             <small>{{post.date | date: "%Y %b %m"}}</small>
             <div>{{post.excerpt | strip_html}}</div>

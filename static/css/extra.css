@@ -1,5 +1,16 @@
+@font-face {
+    font-family: "PlayfairDisplay";
+    src: url("../webfonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
+
 .highlighter-rouge {
     border:1px solid #A0A0A0;
     border-radius: 4px;
     padding: 5px;
+}
+
+.post-title {
+    font-family: "PlayfairDisplay";
+    text-decoration: none;
+    color: #000;
 }
