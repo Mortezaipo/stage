@@ -7,12 +7,17 @@ page_menu: Blog
 <div class="mb-3">
     <div>
         <div>
-            <h4>
-            <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}"
-               class="text-body post-title">{{post.title}}</a>
-            </h4>
-            <small>{{post.date | date: "%Y %b %m"}}</small>
+            <small class="text-dark">{{post.date | date: "%Y %b %m"}}</small>
+            <h3>
+                <a href="{{post.url | prepend: site.baseurl}}" rel="bookmark" title="Permanent link to {{post.title}}"
+                   class="text-body post-title">{{post.title}}</a>
+            </h3>
             <div class="post-body">{{post.excerpt | strip_html}}</div>
+            <div>
+                <a href="{{post.url | prepend: site.baseurl}}" class="btn btn-outline-secondary mt-2 mb-2">Read More
+                    <i class="fas fa-angle-right ml-1"></i>
+                </a>
+            </div>
         </div>
     </div>
 </div>
