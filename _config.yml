@@ -1,41 +1,36 @@
 title: ZeroToOne
-email: m@0t1.me
-author: Morteza NourelahiAlamdari
-tagline: Senior Software Engineer
-description: >-
-  Senior Software Engineer
-keywords: [
-  "programmer",
-  "programming",
-  "developer",
-  "code",
-  "source",
-  "linux",
-  "gnu",
-  "python",
-  "c",
-  "c++",
-  "tools"
-]
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://0t1.me/"
+description: Senior Software Engineer
+
+url: https://0t1.me/
+baseurl: ""
+paginate_path: blog/page:num/
 permalink: /blog/:categories/:year/:month/:day/:title
-twitter_username: mortymacs
-github_username: mortymacs
-instagram_username: mortymacs
+
+# Header Option
+# header: large
 
 markdown: kramdown
+highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
 
-collections:
-  - projects
+navigation:
+  - title: Home
+    url: /index.html
+  - title: Contact
+    url: mailto:m@0t1.me
+  - title: Résumé
+    url: https://github.com/mortymacs/resume/releases/download/latest/resume.pdf
+  - title: Appointment
+    url: https://calendly.com/mortymacs/meet-mort
 
-# Build settings
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
+social:
+  github: mortymacs
+  twitter: mortymacs
+  email: m@0t1.me
+  linkedin: morteza-nourelahi-alamdari
 
-gems: [jekyll-paginate]
-plugins_dir: [jekyll-paginate]
+#google_analytics: "UA-58263416-1"
 
-paginate: 7
-paginate_path: "/posts/page:num/"
+#disqus:
+#    shortname: brianmaierjr
