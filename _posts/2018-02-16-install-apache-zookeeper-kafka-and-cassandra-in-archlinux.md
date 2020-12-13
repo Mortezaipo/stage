@@ -7,6 +7,7 @@ keywords: [apache, zookeeper, cassandra, kafka, installation]
 tags: [apache, zookeeper, cassandra, kafka]
 category: tools
 excerpt_separator: <!-- more -->
+comments: true
 ---
 In this tutorial we are going to install Apache Zookeeper, Kafka and Cassandra in ArchLinux.
 Installing this way in other Linux distribution is the same but a little bit different.

@@ -17,10 +17,10 @@ paginate: 5
 navigation:
   - title: Home
     url: /index.html
-  - title: Contact
-    url: mailto:m@0t1.me
   - title: Résumé
     url: https://github.com/mortymacs/resume/releases/download/latest/resume.pdf
+  - title: Contact
+    url: mailto:m@0t1.me
   - title: Appointment
     url: https://calendly.com/mortymacs/meet-mort
 
@@ -30,7 +30,7 @@ social:
   email: m@0t1.me
   linkedin: morteza-nourelahi-alamdari
 
-#google_analytics: "UA-58263416-1"
+#google_analytics: ""
 
-#disqus:
-#    shortname: brianmaierjr
+disqus:
+    shortname: 0t1-me

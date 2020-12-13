@@ -17,6 +17,7 @@ references:
  - '<a href="https://mail.python.org/pipermail/python-ldap/2009q3/002594.html" target="_blank">Internal attributes (conversation node on Python org mail)</a>'
  - 'Access log: <a href="http://www.openldap.org/doc/admin24/overlays.html#Access%20Logging" target="_blank">OpenLDAP access logging</a>'
  - 'How to check the login history of users on openldap: <a href="https://www.openldap.org/lists/openldap-technical/201505/msg00117.html" target="_blank">OpenLDAP login history of users</a>'
+comments: true
 ---
 In many systems when you want to implement an integration with LDAP services, normally you get all users details in every sync action which sometimes this amount of size is large and it's not good action to sync all users on every sync action.
 <!-- more -->

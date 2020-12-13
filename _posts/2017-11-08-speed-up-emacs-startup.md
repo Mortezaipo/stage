@@ -7,6 +7,7 @@ keywords: [tools, emacs, ide, config, performance]
 tags: [tools, emacs, ide, config]
 category: tools
 excerpt_separator: <!-- more -->
+comments: true
 ---
 Emacs is a fantastic editor for developers with many features.
 Unfortunatelly emacs boot time is not good enough and it takes a while to load server and client services.

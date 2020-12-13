@@ -11,6 +11,7 @@ extra_css: [prism.css]
 extra_js: [prism.js]
 references:
   - '<a href="https://docs.python.org/3.6/library/multiprocessing.html#sharing-state-between-processes" target="_blank">Sharing state between processes</a>'
+comments: true
 ---
 Providing a shared data or state between different processes is so useful and great idea because in many
 cases when you want to implement parallel systems, you should provide a way that each process can
