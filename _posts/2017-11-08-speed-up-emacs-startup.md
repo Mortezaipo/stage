@@ -16,31 +16,31 @@ Unfortunatelly emacs boot time is not good enough and it takes a while to load s
 To solve this issue, try to apply these steps:
 
 Add this line in `/etc/profile`:
-```
+{%- highlight shell -%}
 if [ ! $(ps -x | grep emacs | grep daemon | awk '{ print $2 }') ]; then
 	emacs --daemon 2> /dev/null
 fi
-```
+{%- endhighlight -%}
 
 **Relogin again to start the daemon.**
 
 Now you can edit your files with `emacsclient` command like so:
-```
+{%- highlight shell -%}
 $ emacsclient sample.cpp
-```
+{%- endhighlight -%}
 
 If you want to run emacsclient in gui mode, run this command:
-```
+{%- highlight shell -%}
 $ emacsclient -c sample.cpp
-```
+{%- endhighlight -%}
 
 To make your default emacs application to run emacsclient instead of emacs command,
 edit your `/usr/share/applications/emacs.desktop` file and change `Exec` line to this:
-```
+{%- highlight ini -%}
 ..
 Exec=emacsclient -c %F
 ..
-```
+{%- endhighlight -%}
 
 If `emacs.desktop` has `Try` variable, change that too.
 

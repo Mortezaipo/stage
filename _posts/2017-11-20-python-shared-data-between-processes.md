@@ -25,7 +25,7 @@ We have 2 processes which are:
 * Process-1 is responsible to check the value (shared data).
 * Process-2 is responsible to set the value (shared data).
 
-```python
+{%- highlight python -%}
 from multiprocessing import Process, Value
 from ctypes import c_char
 from time import sleep
@@ -53,7 +53,7 @@ if __name__ == "__main__":
     p2.start()
     p1.join()
     p2.join()
-```
+{%- endhighlight -%}
 
 Try to implement your projects and idea with this great features which help you to
 have high performance and scalable systems.

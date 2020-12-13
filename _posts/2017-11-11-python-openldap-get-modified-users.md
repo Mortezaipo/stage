@@ -25,28 +25,28 @@ In many systems when you want to implement an integration with LDAP services, no
 To handle this situation we could implement several ways to increase sync performance and avoid duplicate or get already synced user again.
 
 To handle this issue, you need to get openldap internal fields by adding a `+` sign at the end of search query like so:
-```
-ldapsearch -h localhost -w 'admin' -x -D "cn=admin,dc=example,dc=org" -b "DC=example,DC=org" +
-```
+{%- highlight shell -%}
+$ ldapsearch -h localhost -w 'admin' -x -D "cn=admin,dc=example,dc=org" -b "DC=example,DC=org" +
+{%- endhighlight -%}
 
 And in python code it would like this:
-```
+{%- highlight python -%}
 r = l.search_ext("dc=example,dc=org", ldap.SCOPE_SUBTREE, "objectClass=*", ["+",], 0)
-```
+{%- endhighlight -%}
 
 Then it returns internal fields which are important like `modifyTimestamp`.
 
 Or if you want to get all internal fields and user attributes in one request, just add `'*' '+'` like this:
-```
+{%- highlight python -%}
 r = l.search_ext("dc=example,dc=org", ldap.SCOPE_SUBTREE, "objectClass=*", ["*", "+"], 0)
-```
+{%- endhighlight -%}
 
 If you want to get last changed user after a specific date, try to add `modifyTimestamp` on query like this:
-```
+{%- highlight shell -%}
 ldapsearch -h localhost -w 'admin' -x -D "cn=admin,dc=example,dc=org" -b "DC=example,DC=org" "modifyTimestamp>=20171012152507Z
-```
+{%- endhighlight -%}
 
 To get more info about history, try to enable `overlay accesslog` in your ldap and use it:
-```
+{%- highlight shell -%}
 ldapsearch -x -b cn=accesslog
-```
+{%- endhighlight -%}
