@@ -36,6 +36,13 @@ a:visited {
   color: #3e80b0;
 }
 
+code,
+kbd,
+pre,
+samp {
+  font-family: 'roboto-mono' !important;
+}
+
 .site-title {
   font-family: "Merienda";
   font-size: 5.3vw;
