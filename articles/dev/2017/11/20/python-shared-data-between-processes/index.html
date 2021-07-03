@@ -1,0 +1,37 @@
+<!doctype html><html><head><title>Python Shared Data Between Processes</title><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/fontawesome.min.css><link rel=stylesheet href=/css/syntax.css></head><body><div class=top-banner><div class=container><div class="text-center site-title">ZeroToOne</div><div class=row><div class="col-md-6 offset-md-4"><ul class=nav><li class=nav-item><a class="nav-link fw-bold" title="home page" href=https://0t1.me/>HOME</a></li><li class=nav-item><a class="nav-link fw-bold" title=resume href=https://github.com/mortymacs/resume/releases/download/latest/resume.pdf target=_blank>RESUME</a></li><li class=nav-item><a class="nav-link fw-bold" title=contact href=mailto:m@0t1.me>CONTACT</a></li><li class=nav-item><a class=nav-link title=github href=https://github.com/mortymacs target=_blank><i class="fab fa-github"></i></a></li><li class=nav-item><a class=nav-link title=pypi href=https://pypi.org/user/mortymacs/ target=_blank><i class="fab fa-python"></i></a></li><li class=nav-item><a class=nav-link title=twitter href=https://twitter.com/mortymacs target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div></div><div id=content class=container><div class="row mt-2"><div><small class="post-publish-at fst-italic">July 12, 2017</small>
+<label class="badge post-tag">#python</label>
+<label class="badge post-tag">#concurrency</label>
+<label class="badge post-tag">#multiprocessing</label>
+<label class="badge post-tag">#shared_data</label>
+<label class="badge post-tag">#shared_state</label>
+<label class="badge post-tag">#high_performance</label></div><div><h2 class=post-title>Python Shared Data Between Processes</h2><p class=post-body><p>Providing a shared data or state between different processes is so useful and great idea because in many
+cases when you want to implement parallel systems, you should provide a way that each process can
+communicate with others.</p><p>Fortunately, Python supports many kinds of shared data such as <code>Value</code>, <code>Array</code>, <code>Dict</code>, and <code>Queue</code> and so on.</p><p>Let&rsquo;s try an example:</p><p>We have 2 processes which are:</p><ul><li>Process-1 is responsible to check the value (shared data).</li><li>Process-2 is responsible to set the value (shared data).</li></ul><div class=highlight><pre class=chroma><code class=language-python data-lang=python><span class=kn>from</span> <span class=nn>multiprocessing</span> <span class=kn>import</span> <span class=n>Process</span><span class=p>,</span> <span class=n>Value</span>
+<span class=kn>from</span> <span class=nn>ctypes</span> <span class=kn>import</span> <span class=n>c_char</span>
+<span class=kn>from</span> <span class=nn>time</span> <span class=kn>import</span> <span class=n>sleep</span>
+
+
+<span class=k>def</span> <span class=nf>process_1</span><span class=p>(</span><span class=n>shared_data</span><span class=p>):</span>
+    <span class=s2>&#34;&#34;&#34;Process-1 is responsible to check the value.&#34;&#34;&#34;</span>
+    <span class=k>while</span> <span class=n>shared_data</span><span class=o>.</span><span class=n>value</span> <span class=o>!=</span> <span class=sa>b</span><span class=s2>&#34;my_data&#34;</span><span class=p>:</span>
+      <span class=n>sleep</span><span class=p>(</span><span class=mf>0.5</span><span class=p>)</span>
+    <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;process-1 got the value. exit.&#34;</span><span class=p>)</span>
+
+<span class=k>def</span> <span class=nf>process_2</span><span class=p>(</span><span class=n>shared_data</span><span class=p>):</span>
+    <span class=s2>&#34;&#34;&#34;Process-2 is responsible to set value.&#34;&#34;&#34;</span>
+    <span class=n>sleep</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=n>shared_data</span><span class=o>.</span><span class=n>value</span> <span class=o>=</span> <span class=sa>b</span><span class=s2>&#34;my_data&#34;</span>
+    <span class=n>sleep</span><span class=p>(</span><span class=mi>1</span><span class=p>)</span>
+    <span class=nb>print</span><span class=p>(</span><span class=s2>&#34;process-2 set the value. exit.&#34;</span><span class=p>)</span>
+
+<span class=k>if</span> <span class=vm>__name__</span> <span class=o>==</span> <span class=s2>&#34;__main__&#34;</span><span class=p>:</span>
+    <span class=c1># create a shared data with 10 character length</span>
+    <span class=n>shared_data</span> <span class=o>=</span> <span class=n>Value</span><span class=p>(</span><span class=n>c_char</span> <span class=o>*</span> <span class=mi>10</span><span class=p>)</span>
+    <span class=n>p1</span> <span class=o>=</span> <span class=n>Process</span><span class=p>(</span><span class=n>target</span><span class=o>=</span><span class=n>process_1</span><span class=p>,</span> <span class=n>args</span><span class=o>=</span><span class=p>(</span><span class=n>shared_data</span><span class=p>,))</span>
+    <span class=n>p2</span> <span class=o>=</span> <span class=n>Process</span><span class=p>(</span><span class=n>target</span><span class=o>=</span><span class=n>process_2</span><span class=p>,</span> <span class=n>args</span><span class=o>=</span><span class=p>(</span><span class=n>shared_data</span><span class=p>,))</span>
+    <span class=n>p1</span><span class=o>.</span><span class=n>start</span><span class=p>()</span>
+    <span class=n>p2</span><span class=o>.</span><span class=n>start</span><span class=p>()</span>
+    <span class=n>p1</span><span class=o>.</span><span class=n>join</span><span class=p>()</span>
+    <span class=n>p2</span><span class=o>.</span><span class=n>join</span><span class=p>()</span>
+</code></pre></div><p>Try to implement your projects and idea with this great features which help you to
+have high performance and scalable systems.</p></p><h5>References:</h5><ul><li><a href=https://docs.python.org/3.6/library/multiprocessing.html#sharing-state-between-processes target=_blank>Sharing state between processes</a></li></ul></div></div><hr><div>All rights reserved by Morteza NourelahiAlamdari (mortymacs) &copy;<br>All contents are under the <a href=https://creativecommons.org/licenses/by-sa/4.0/ target=_blank>Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a> license.<br>Top banner picture by <a href=https://unsplash.com/ target=_blank>Unsplash</a>.</div></div></body></html>

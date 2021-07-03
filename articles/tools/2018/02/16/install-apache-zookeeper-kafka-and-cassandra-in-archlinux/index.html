@@ -1,0 +1,32 @@
+<!doctype html><html><head><title>Install Apache Zookeeper, Kafka and Cassandra in ArchLinux</title><link rel=stylesheet href=/css/bootstrap.min.css><link rel=stylesheet href=/css/style.css><link rel=stylesheet href=/css/fontawesome.min.css><link rel=stylesheet href=/css/syntax.css></head><body><div class=top-banner><div class=container><div class="text-center site-title">ZeroToOne</div><div class=row><div class="col-md-6 offset-md-4"><ul class=nav><li class=nav-item><a class="nav-link fw-bold" title="home page" href=https://0t1.me/>HOME</a></li><li class=nav-item><a class="nav-link fw-bold" title=resume href=https://github.com/mortymacs/resume/releases/download/latest/resume.pdf target=_blank>RESUME</a></li><li class=nav-item><a class="nav-link fw-bold" title=contact href=mailto:m@0t1.me>CONTACT</a></li><li class=nav-item><a class=nav-link title=github href=https://github.com/mortymacs target=_blank><i class="fab fa-github"></i></a></li><li class=nav-item><a class=nav-link title=pypi href=https://pypi.org/user/mortymacs/ target=_blank><i class="fab fa-python"></i></a></li><li class=nav-item><a class=nav-link title=twitter href=https://twitter.com/mortymacs target=_blank><i class="fab fa-twitter"></i></a></li></ul></div></div></div></div><div id=content class=container><div class="row mt-2"><div><small class="post-publish-at fst-italic">July 12, 2018</small>
+<label class="badge post-tag">#tools</label>
+<label class="badge post-tag">#apache</label>
+<label class="badge post-tag">#zookeeper</label>
+<label class="badge post-tag">#cassandra</label>
+<label class="badge post-tag">#kafka</label></div><div><h2 class=post-title>Install Apache Zookeeper, Kafka and Cassandra in ArchLinux</h2><p class=post-body><p>In this tutorial we are going to install Apache Zookeeper, Kafka and Cassandra in ArchLinux.
+Installing this way in other Linux distribution is the same but a little bit different.</p><h2 id=pre-installation>Pre installation</h2><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ pacman -S jdk8-openjdk jre8-openjdk gradle scala
+$ mkdir ~/Applications/
+</code></pre></div><h2 id=zookeeper>Zookeeper</h2><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ wget -c http://www-us.apache.org/dist/zookeeper/stable/zookeeper-3.4.10.tar.gz
+$ tar xzf zookeeper-3.4.10.tar.gz -C ~/Applications/
+$ mv ~/Applications/zookeeper-3.4.10 ~/Application/zookeeper
+$ <span class=nb>cd</span> ~/Applications/zookeeper/
+$ mkdir data
+$ mv conf/zoo_sample.cfg zoo.cfg
+</code></pre></div><p>Now open <code>conf/zoo.cfg</code> and update <code>dataDir</code> variable:</p><div class=highlight><pre class=chroma><code class=language-ini data-lang=ini><span class=na>dataDir</span><span class=o>=</span><span class=s>data</span>
+</code></pre></div><p>Now add <code>~/Applications/zookeeper/bin/</code> in <code>$PATH</code> to make it easy to accessible.</p><p>Now run it:</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ zkServer.sh start
+</code></pre></div><p>Success run message contains: <code>... STARTED</code></p><h2 id=apache-kafka>Apache Kafka</h2><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ wget -c http://www-us.apache.org/dist/kafka/1.0.0/kafka-1.0.0-src.tgz
+$ tar xzf kafka-1.0.0-src.tgz -C ~/Applications/
+$ mv ~/Applications/kafka-1.0.0 ~/Applications/kafka
+$ <span class=nb>cd</span> ~/Applications/kafka/
+$ gradle jar
+</code></pre></div><p>Now add <code>~/Applications/kafka/bin/</code> in <code>$PATH</code> to make it easy to accessible.</p><p>Now run it:</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ kafka-server-start.sh ~/Applications/kafka/config/server.properties
+</code></pre></div><p>Success run message contains: <code>... started (kafka.server.KafkaServer)</code></p><h2 id=cassandra>Cassandra</h2><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ wget -c http://www-eu.apache.org/dist/cassandra/3.11.1/apache-cassandra-3.11.1-bin.tar.gz
+$ tar xzf apache-cassandra-3.11.1-bin.tar.gz ~/Applictions/
+$ mv ~/Applications/apache-cassandra-3.11.1 ~/Applications/cassandra
+$ <span class=nb>cd</span> ~/Applications/cassandra/
+$ mkdir -p data/data
+$ mkdir -p data/commitlog
+$ mkdir -p data/saved_caches
+$ mkdir -p logs
+</code></pre></div><p>Now add <code>~/Applications/cassandra/bin/</code> in <code>$PATH</code> to make it easy to accessible.</p><p>Now run it:</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>$ cassandra -f
+</code></pre></div><p>Success run message contains: <code>... Starting listening for CQL clients on localhost/127.0.0.1:9042</code></p></p></div></div><hr><div>All rights reserved by Morteza NourelahiAlamdari (mortymacs) &copy;<br>All contents are under the <a href=https://creativecommons.org/licenses/by-sa/4.0/ target=_blank>Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a> license.<br>Top banner picture by <a href=https://unsplash.com/ target=_blank>Unsplash</a>.</div></div></body></html>
