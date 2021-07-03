@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<div class="text-center container-title">Recent Posts</div>
+
+{{ range first 10 .Site.RegularPages }}
+<div class="row mt-2">
+  <div>
+    <small class="post-publish-at fst-italic">{{ .Date.Format "Monday, Jan 2, 2006" }}</small>
+
+    {{ range .Params.tags }}
+    <label class="badge post-tag">#{{ . }}</label>
+    {{ end }}
+  </div>
+  <div>
+    <a href="{{ .RelPermalink }}" class="post-title">
+      <h2>{{ .Title }}</h2>
+    </a>
+    <p class="post-body">
+    {{ .Summary }}
+    </p>
+  </div>
+</div>
+{{ end }}
+
+{{ end }}

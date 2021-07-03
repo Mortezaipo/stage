@@ -1,0 +1,5 @@
+baseURL = "https://0t1.me/"
+languageCode = "en-us"
+title = "ZeroToOne"
+theme = "0t1"
+pygmentsUseClasses=true

@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+<div class="row mt-2">
+  <div>
+    <small class="post-publish-at fst-italic">{{ .Date.Format "July 3, 2006" }}</small>
+
+    {{ range .Params.tags }}
+    <label class="badge post-tag">#{{ . }}</label>
+    {{ end }}
+  </div>
+  <div>
+    <h2 class="post-title">{{ .Title }}</h2>
+    <p class="post-body">
+    {{ .Content }}
+    </p>
+
+    {{ if .Params.references }}
+    <h5>References:</h5>
+    <ul>
+      {{ range .Params.references }}
+      <li>{{ . | safeHTML }}</li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </div>
+</div>
+
+{{ end }}

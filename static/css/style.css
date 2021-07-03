@@ -1,0 +1,96 @@
+@font-face {
+  src: url("../fonts/RobotoSlab-Medium.ttf");
+  font-family: "roboto-slab-medium";
+}
+@font-face {
+  src: url("../fonts/RobotoMono-Regular.ttf");
+  font-family: "roboto-mono";
+}
+@font-face {
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-family: "roboto";
+}
+@font-face {
+  src: url("../fonts/Roboto-Italic.ttf");
+  font-family: "roboto";
+  font-style: italic;
+}
+@font-face {
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-family: "roboto";
+  font-weight: bold;
+}
+@font-face {
+  src: url("../fonts/Merienda-Bold.ttf");
+  font-family: "Merienda";
+}
+
+body {
+  font-family: "roboto";
+}
+
+a,
+a:hover,
+a:focus,
+a:visited {
+  color: #3e80b0;
+}
+
+.site-title {
+  font-family: "Merienda";
+  font-size: 5.3vw;
+  color: #fff;
+  text-shadow: 0px 4px #41a7ab;
+}
+
+.container-title {
+  font-family: "roboto-slab-medium";
+  font-size: 3vw;
+}
+
+.post-publish-at,
+.post-title,
+.post-body {
+  font-family: "roboto";
+}
+
+.post-title {
+  color: #3e80b0;
+  text-decoration: none;
+}
+
+.post-tag {
+  background-color: #9CC0DC;
+  color: #FFF;
+}
+
+.post-body {
+  color: #234a61;
+}
+
+.top-banner {
+  background-image: url(../img/top-banner.jpg);
+  height: 340px;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.nav-item {
+  background-color: #41A7AB;
+}
+.nav-item a,
+.nav-item a:visited,
+.nav-item a:focus {
+  color: #FFF;
+}
+.nav-item:hover {
+  background-color: #FFF;
+}
+.nav-item a:hover {
+  color: #41A7AB;
+}
+
+.highlight > pre {
+  padding: 10px;
+}
