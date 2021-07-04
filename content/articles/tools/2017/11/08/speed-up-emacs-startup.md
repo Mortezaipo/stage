@@ -11,7 +11,7 @@ Unfortunatelly emacs boot time is not good enough and it takes a while to load s
 To solve this issue, try to apply these steps:
 
 Add this line in `/etc/profile`:
-```bash
+```bash {linenos=table}
 if [ ! $(ps -x | grep emacs | grep daemon | awk '{ print $2 }') ]; then
 	emacs --daemon 2> /dev/null
 fi

@@ -19,7 +19,7 @@ We have 2 processes which are:
 * Process-1 is responsible to check the value (shared data).
 * Process-2 is responsible to set the value (shared data).
 
-```python
+```python {linenos=table}
 from multiprocessing import Process, Value
 from ctypes import c_char
 from time import sleep
