@@ -99,5 +99,18 @@ samp {
 }
 
 .highlight > pre {
-  padding: 10px;
+  padding: 10px !important;
+}
+.chroma {
+  margin: 0;
+}
+.chroma .lntable {
+  padding: 10px !important;
+}
+.chroma .lntd {
+  padding: 0 10px !important;
+}
+.chroma .lnt {
+  margin-right: 0 !important;
+  padding: 0 !important;
 }
